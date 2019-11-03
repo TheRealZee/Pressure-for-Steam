@@ -1,122 +1,139 @@
 "steam/cached/SettingsSubInterface.res" {
-	styles {}
+	styles {
+		CSubPanelOptionsInterface {
+			render_bg {
+				0="fill(x0+71,y0+184,x1,y0+165, color__divider)"
+				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
+				2="image(x0+26,y0+203,x1,y1, graphics/icons/settings/appearance)"
+			}
+
+			render_bg [$OSX] {
+				0="fill(x0+71,y0+90,x1,y0+91, color__divider)"
+				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
+				2="image(x0+26,y0+109,x1,y1, graphics/icons/settings/appearance)"
+			}
+		}
+	}
+	
 	layout {
 		place {
-			control="Label4"
-			x=18
-			y=21
-			margin-right=43
-			dir=down
-		}
-		place {
-			control="LanguageCombo"
-			start=Label4
-			y=4
-			width=340
-			height=28
-			dir=down
-		}
-		place {
-			control="TranslationLabel"
-			start=LanguageCombo
-			y=16
-			dir=down
-		}
-		place {
-			control="Divider1"
-			start=TranslationLabel
-			y=16
-			width=max
-			margin-right=43
-			dir=down
-		}
-		place {
-			control="Label2"
-			start=Divider1
-			y=16
-			dir=down
-		}
-		place {
-			control="FavoriteWindowCombo"
-			start=Label2
-			y=4
-			width=340
-			height=28
-			dir=down
-		}
-		place {
-			control="Label3"
-			start=FavoriteWindowCombo
-			y=16
-			dir=down
-		}
-		place {
-			control="SkinCombo"
-			start=Label3
-			y=4
-			width=340
-			height=28
-			dir=down
-		}
-		place {
-			controls=AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,UrlBarCheck
-			start=SkinCombo
-			y=10
-			dir=down
-			spacing=-4
-		}
-		// Remove option for linux
-		place {
-			control=H264HWAccelCheck
-			width=0
+			control=TranslationLabel,Label2,Divider1,Divider2,Divider3
 			height=0
-		}
-		// Readd button for Windows
-		place [$WINDOWS] {
-			controls=H264HWAccelCheck
-			start=UrlBarCheck
-			y=-4
-			dir=down
 		}
 
-		// Start divider at UrlBarCheck for Linux
-		place {
-			control="Divider2"
-			start=UrlBarCheck
-			y=10
+		region {
+			name=system
+			x=82
+			y=0
 			width=max
-			margin-right=43
-			dir=down
+			height=184
+			margin-right=29
 		}
-		// Start divider at H264HWAccelCheck for Windows
-		place [$WINDOWS] {
-			control="Divider2"
+
+		place {
+			control=AutoLaunchCheck,BigPictureModeCheck,DWriteCheck,H264HWAccelCheck
+			region=system
+			dir=down
+			y=28
+			height=18
+			spacing=8
+		}
+
+		place {
+			control=SetJumpListOptionsButton
 			start=H264HWAccelCheck
-			y=10
-			width=max
-			margin-right=43
+			start=BigPictureModeCheck [$LINUX]
 			dir=down
+			y=4
+			width=350
+			height=34
+		}
+
+
+		region {
+			name=steam
+			x=82
+			y=156
+			y=82 [$OSX]
+			width=max
+			height=114
+			margin-right=29
+		}
+
+		place {
+			control=Label1
+			region=steam
+			dir=down
+			y=28
+			spacing=2
+		}
+
+		place {
+			control=FavoriteWindowCombo
+			start=Label1
+			dir=down
+			y=4
+			width=350
+			height=34
+		}
+
+		place {
+			control=Label3
+			start=FavoriteWindowCombo
+			dir=down
+			y=18
+			spacing=2
+		}
+
+		place {
+			control=SkinCombo
+			start=Label3
+			dir=down
+			width=350
+			height=34
+			y=4
+		}
+
+		place {
+			control=GPUWebViewCheck,DPIScalingCheck,SmoothScrollWebViewCheck
+			start=SkinCombo
+			dir=down
+			y=4
+			height=18
+			spacing=4
+		}
+
+		place {
+			control=Label4
+			start=SmoothScrollWebViewCheck
+			dir=down
+			y=18
+			spacing=2
 		}
 		place {
-			controls=NotifyAvailableGamesCheck
-			start=Divider2
-			y=16
-			width=max
-			margin-right=43
+			control=LanguageCombo
+			start=Label4
 			dir=down
+			y=4
+			width=350
+			height=34
 		}
+
 		place {
-			control="SetJumpListOptionsButton"
-			start=NotifyAvailableGamesCheck
+			control=UrlBarCheck
+			start=LanguageCombo
+			dir=down
 			y=8
-			width=340
-			height=28
-			dir=down
+			height=18
+			spacing=8
 		}
+
 		place {
-			control="Label1"
-			width=0
-			height=0
+			control=NotifyAvailableGamesCheck
+			start=URLBarCheck
+			dir=down
+			y=8
+			height=36
 		}
 	}
 }
