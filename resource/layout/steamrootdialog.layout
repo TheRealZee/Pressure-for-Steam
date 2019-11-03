@@ -494,9 +494,9 @@ font-size=14 [$LINUX]
 		place [!$OSX] {
 			control="MenuBar"
 			align=top
-			margin-left=2
-			margin-top=-1
-			width=62
+			margin-left=-6
+			margin-top=22
+			width=68
 		}
 		place {
 			control="ParentalLockButton"

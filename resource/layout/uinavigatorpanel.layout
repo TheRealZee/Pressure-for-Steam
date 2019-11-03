@@ -2056,7 +2056,7 @@ font-size=14 [$LINUX]
 // ********************************************************************************************************
 		place {
 			control="label_store,label_library,label_community,label_me,label_news,label_console"
-			x=80
+			x=100
 			y=0
 			height=43
 			margin-top=-1
@@ -2239,6 +2239,10 @@ font-size=14 [$LINUX]
 // ********************************************************************************************************
 // "Pages" - These controls place down things like the GameDetails page.
 // ********************************************************************************************************
+		place {
+			control=NewLibraryPage
+			width=max height=max start=phonereminderbar dir=down
+		}
 		place {
 			control=DownloadsPage
 			start=phonereminderbar
