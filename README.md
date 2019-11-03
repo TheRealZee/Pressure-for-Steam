@@ -1,3 +1,4 @@
+
 Pressure for Steam
 ==================
 Pressure is a skin for Valve's Steam client that seeks to improve the visuals and aesthetics of Steam beyond the default skin.
@@ -9,11 +10,8 @@ You must also ensure that you are using the current BETA version of Steam, as ot
 
 ### Images (As of 4th April 2015)
 Here are a couple images of the skin. The look and feel of the skin can change at any time, so what you see in these images might not be what you see when you download the skin.
-* [**Game Details**](http://hydra.tf/pressure/images/pressure.png)
-* [**Grid View**](http://hydra.tf/pressure/images/pressure-grid.png)
-* [**In-Game Overlay**](http://hydra.tf/pressure/images/overlay.png)
-* [**Friends List, Chat**](http://hydra.tf/pressure/images/friends-and-chat.png)
-* [**Download Page**](http://hydra.tf/pressure/images/pressure-downloadpage.png)
+![Pressure](http://hydra.tf/pressure/images/pressure-downloadpage.png)
+* [**Photo**](http://hydra.tf/pressure/images/pressure-downloadpage.png)
 ## Downloading and Installing
 Because the skin is still in development, you can only download the skin here on GitHub until the skin is ready for the public to download.  To do that, just follow these steps:
 
