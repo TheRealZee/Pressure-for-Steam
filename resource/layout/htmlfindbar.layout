@@ -15,10 +15,11 @@
 			image="graphics/tab_close"
 			render_bg{}
 		}
-			CloseButtonSm:hover {
-				image="graphics/tab_close_hover"
-				render_bg{}
-			}
+
+		CloseButtonSm:hover {
+			image="graphics/tab_close_hover"
+			render_bg{}
+		}
 
 		NextButtonSm {
 			bgcolor=none
@@ -26,12 +27,13 @@
 			image="graphics/icon_down_default"
 			render_bg{}
 		}
-			NextButtonSm:hover {
-				bgcolor=none
-				inset="0 0 0 0"
-				image="graphics/icon_down_hover"
-				render_bg{}
-			}
+
+		NextButtonSm:hover {
+			bgcolor=none
+			inset="0 0 0 0"
+			image="graphics/icon_down_hover"
+			render_bg{}
+		}
 
 		PrevButtonSm {
 			bgcolor=none
@@ -39,12 +41,13 @@
 			image="graphics/icon_up_default"
 			render_bg{}
 		}
-			PrevButtonSm:hover {
-				bgcolor=none
-				inset="0 0 0 0"
-				image="graphics/icon_up_hover"
-				render_bg{}
-			}
+
+		PrevButtonSm:hover {
+			bgcolor=none
+			inset="0 0 0 0"
+			image="graphics/icon_up_hover"
+			render_bg{}
+		}
 	}
 
 	layout {

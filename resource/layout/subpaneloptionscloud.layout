@@ -7,6 +7,7 @@
 			width=max
 			margin-right=43
 		}
+
 		place {
 			controls="EnableCloudCheck, EnableScreenshotsCheck"
 			start=SteamCloudInfo

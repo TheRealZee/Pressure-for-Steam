@@ -1,18 +1,19 @@
 "resource/layout/overlay_achievement_item.layout" {
 	styles {
 		label {
-			textcolor=white
+			textcolor=White
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 		}
 
 		name {
-			textcolor=white
+			textcolor=White
 			font-size=26
 			font-family=semibold
 			font-weight=bold
 		}
 	}
+
 	layout {
 		region {
 			name=body

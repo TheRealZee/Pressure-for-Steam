@@ -5,15 +5,15 @@
 		highlight
 		{
 			textcolor=Text
-		}	
-		
+		}
+
 		checkbox
 		{
 			padding-top=0
 			padding-bottom=0
 		}
 	}
-	
+
 	layout {
 		place {
 			controls=TitleLabel
@@ -22,15 +22,17 @@
 			margin-left=20
 			margin-right=43
 		}
+
 		place {
 			controls=DescriptionLabel
 			region=top
 			start=TitleLabel
 			width=max
 			height=40
-			dir=down
 			margin-top=15
-		}		
+			dir=down
+		}
+
 		place {
 			controls=GeneralSettingsButton
 			region=top
@@ -40,6 +42,7 @@
 			margin-top=15
 			dir=down
 		}
+
 		place {
 			controls=Divider1
 			region=top
@@ -49,7 +52,8 @@
 			margin-top=15
 			margin-right=43
 			dir=down
-		}		
+		}
+
 		place {
 			controls=DescriptionBindingLabel
 			region=top
@@ -59,7 +63,8 @@
 			margin-top=0
 			margin-right=43
 			dir=down
-		}			
+		}
+
 		place {
 			controls=BigPictureConfigButton
 			region=top
@@ -68,8 +73,8 @@
 			height=28
 			margin-top=15
 			dir=down
-			
-		}	
+		}
+
 		place {
 			controls=DesktopConfigButton
 			region=top
@@ -78,7 +83,8 @@
 			height=28
 			margin-top=15
 			dir=down
-		}			
+		}
+
 		place {
 			controls=GuideConfigButton
 			region=top
@@ -87,6 +93,16 @@
 			height=28
 			margin-top=15
 			dir=down
-		}								
+		}
+
+		place {
+			controls=DisableNotificationsCheckbox
+			region=top
+			start=GuideConfigButton
+			width=max
+			height=20
+			margin-top=15
+			dir=down
+		}
 	}
 }

@@ -31,10 +31,10 @@
 	}
 		
 	layout {
-	  place {
-	  	control="DragPropertySheet"
-	  	width=max
-	  	height=max
-	  }
+		place {
+			control="DragPropertySheet"
+			width=max
+			height=max
+		}
 	}
 }

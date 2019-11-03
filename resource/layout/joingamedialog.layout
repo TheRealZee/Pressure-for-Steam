@@ -1,7 +1,7 @@
 "resource/layout/joingamedialogexpanded.layout" {
 	styles {
 		label {
-			textcolor=white
+			textcolor=White
 			font-size=18
 		}
 
@@ -106,6 +106,7 @@
 			margin-right=12
 			spacing=8
 		}
+
 		place {
 			controls="SkipUpdateLabel"
 			region=box

@@ -13,19 +13,17 @@
 			padding-left=24
 			padding-top=0
 			padding-bottom=15
-
 			render_bg {
-				1="image(x0,y0,x0+26,y1, graphics/overlay/discussions)"
+				1="image( x0, y0, x0 + 26, y1, graphics/overlay/discussions )"
 			}
 		}
 
-			button:hover {
-				textcolor=lightestBlue
-
-				render_bg {
-					1="image(x0,y0,x0+26,y1, graphics/overlay/discussions_hover)"
-				}
+		button:hover {
+			textcolor=lightestBlue
+			render_bg {
+				1="image( x0, y0, x0 + 26, y1, graphics/overlay/discussions_hover )"
 			}
+		}
 
 		highlight {
 			textcolor=lightestGrey

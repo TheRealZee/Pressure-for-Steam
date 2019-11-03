@@ -1,15 +1,16 @@
 "resource/layout/steamrootdialog_toolspage.layout" {
 	colors {
-		ListPanel.PostSectionLeading	12
+		ListPanel.PostSectionLeading 12
 	}
 
 	styles {
 		URLLabel {
 			textcolor="22 117 141 255"
 		}
-			URLLabel:hover {
+
+		URLLabel:hover {
 				textcolor=lightestBlue
-			}
+		}
 
 		CGamesListPanel {
 			padding-left=3
@@ -55,20 +56,22 @@
 				1="gradient(x0,y0,x1,y1+1, grey, lightGreyEnd)"
 			}
 		}
-			"CGamesListPanel ListPanelColumnSelectButton:hover" {
-				render_bg {
-					0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
-					1="gradient(x0,y0,x1,y1+2, lighterGrey, grey)"
-				}
+
+		"CGamesListPanel ListPanelColumnSelectButton:hover" {
+			render_bg {
+				0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
+				1="gradient(x0,y0,x1,y1+2, lighterGrey, grey)"
 			}
-			"CGamesListPanel ListPanelColumnSelectButton:selected" {
-				render {
-					0="image(x0+5,y0+5,x1,y1, graphics/cog_active )"
-				}
-				render_bg {
-					0="fill(x0,y0,x1,y1+1, darkestGrey)"
-				}
+		}
+
+		"CGamesListPanel ListPanelColumnSelectButton:selected" {
+			render {
+				0="image(x0+5,y0+5,x1,y1, graphics/cog_active )"
 			}
+			render_bg {
+				0="fill(x0,y0,x1,y1+1, darkestGrey)"
+			}
+		}
 
 		"CGamesListPanel ListPanelInterior" {
 			inset="6 0 0 0"
@@ -77,7 +80,7 @@
 
 		ListPanelColumnheader [!$OSX] {
 			bgcolor="none"
-			textcolor="white"
+			textcolor="White"
 			font-family=semibold
 			font-size=15
 			font-size=14 [$LINUX]
@@ -96,14 +99,14 @@
 				1="gradient(x0,y0,x1,y1+1, grey, lightGreyEnd)"
 			}
 		}
-			ListPanelColumnHeader:hover {
-				textcolor="white"
 
-				render_bg {
-					0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
-					1="gradient(x0,y0,x1,y1+2, lighterGrey, grey)"
-				}
+		ListPanelColumnHeader:hover {
+			textcolor="White"
+			render_bg {
+				0="fill(x0,y0,x1,y0+1, lightestGreyHighlight)"
+				1="gradient(x0,y0,x1,y1+2, lighterGrey, grey)"
 			}
+		}
 	}
 
 	layout {

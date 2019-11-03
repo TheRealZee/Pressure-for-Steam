@@ -14,16 +14,16 @@
 			bgcolor=none
 			textcolor=Text2
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
 			font-weight=400
 			padding-top=0
 			padding-bottom=10
 		}
 
-			TrackLabelStyle:hover {
-				textcolor="text"
-			}
+		TrackLabelStyle:hover {
+			textcolor="text"
+		}
 	}
 
 	layout {
@@ -37,6 +37,7 @@ font-size=14 [$LINUX]
 			region="panelregion"
 			width=40
 		}
+
 		place {
 			control="TrackLabel"
 			region="panelregion"

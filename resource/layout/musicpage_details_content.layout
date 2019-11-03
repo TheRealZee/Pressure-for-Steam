@@ -5,6 +5,7 @@
 				1="gradient_horizontal(x0,y0,x0+10,y1, black25, none)"
 			}
 		}
+
 		DetailsBorderPanel {
 			bgcolor="none"
 			textcolor="red"
@@ -25,7 +26,7 @@
 		}
 
 		CrawlingText {
-			textcolor="white"
+			textcolor="red"
 			font-size="15"
 			render_bg {}
 		}
@@ -43,7 +44,7 @@
 		"MusicPage_Details_Content ListPanel" {
 			bgcolor="darkestGrey"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			padding-left=4
 			padding-right=2
 			minimum-width=320
@@ -53,10 +54,8 @@ font-size=14 [$LINUX]
 
 		"MusicPage_Details_Content ListPanelInterior" {
 			bgcolor="none"
-			textcolor="white"
+			textcolor="red"
 			inset="0 0 0 0"
-
-
 			render_bg {}
 		}
 
@@ -64,16 +63,15 @@ font-size=14 [$LINUX]
 			bgcolor=none
 			inset="0 0 -10 0"
 			minimum-width=320
-
 			render_bg {}
 		}
 
 		"MusicPage_Details_Content ListPanelDragger" {
 			bgcolor="none"
-
 			render {}
 			render_bg {}
 		}
+
 		"MusicPage_Details_Content ListPanelColumnHeader" [!$OSX] {
 			bgcolor="none"
 			font-size=14
@@ -86,17 +84,15 @@ font-size=14 [$LINUX]
 		"MusicPage_Details_Content ListPanelColumnHeader" [$OSX] {
 			bgcolor="none"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			inset="2 2 0 0"
-
 			render {}
 		}
 
 		"AlbumOrArtistListStyle ListPanelColumnSelectButton" {
-	   		inset="-3 3 0 0"
-
+			inset="-3 3 0 0"
 			render {
-		  		5="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+				5="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
 			}
 			render_bg {
 				1="fill( x0 + 1, y0, x1 - 1, y1, none )"
@@ -104,18 +100,19 @@ font-size=14 [$LINUX]
 		}
 
 		DetailsBorderPanel {
-			bgcolor = "darkestGrey"
-
+			bgcolor="darkestGrey"
 			render {}
 		}
 
 		BackgroundImage {
 			bgcolor="darkestGrey"
 		}
+
 		RichText {
 			render_bg {}
 		}
 	}
+
 	layout {
 		region {
 			name="background"
@@ -124,6 +121,7 @@ font-size=14 [$LINUX]
 			width=1024
 			height=1024
 		}
+
 		region {
 			name="list"
 			x=0
@@ -132,6 +130,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin-bottom=0
 		}
+
 		region {
 			name="details"
 			x=320
@@ -150,6 +149,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=10
 		}
+
 		place {
 			control=CrawlingText
 			x=0
@@ -166,6 +166,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=max
 		}
+
 		place {
 			control=AlbumList
 			region=list
@@ -173,6 +174,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
+
 		place {
 			control=ArtistList
 			region=list
@@ -180,6 +182,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
+
 		place {
 			control=PlaylistList
 			region=list
@@ -187,6 +190,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
+
 		place {
 			control=*MusicPageDetailsAlbum
 			region=details
@@ -195,6 +199,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=10
 		}
+
 		place {
 			control=*MusicPageDetailsPlaylist
 			region=details
@@ -211,6 +216,7 @@ font-size=14 [$LINUX]
 			width=1024
 			height=1024
 		}
+
 		place {
 			control=BackgroundImageB
 			region=background
@@ -219,6 +225,7 @@ font-size=14 [$LINUX]
 			width=1024
 			height=1024
 		}
+
 		place {
 			control=BackgroundImageMask
 			region=background

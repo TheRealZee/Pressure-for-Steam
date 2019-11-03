@@ -1,18 +1,20 @@
 "resource/layout/overlay_broadcastpanel.layout" {
 	styles {
 		Button {
+			textcolor=blue
 			font-size=15
 			font-size=14 [$LINUX]
 			font-family=basefont
 			font-weight=400
 			inset=2
-			textcolor=blue
 			render {}
 			render_bg {}
 		}
-			button:hover {
-				textcolor=lightestBlue
-			}
+
+		button:hover {
+			textcolor=lightestBlue
+		}
+
 		highlight {
 			textcolor=lightestGrey
 			font-size=14
@@ -26,6 +28,7 @@
 			width=max
 			height=max
 		}
+
 		place {
 			control="ShowChat,ShowBroadcast,StopBroadcast"
 			region=box
@@ -34,6 +37,7 @@
 			dir=right
 			spacing=8
 		}
+
 		place {
 			control=TitleText,ShowSettings,InstructionText
 			width=0

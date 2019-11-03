@@ -9,7 +9,7 @@
 			textcolor=white
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=1000
 			font-style=none
 			padding-left=50
@@ -19,72 +19,39 @@ font-size=14 [$LINUX]
 			render {}
 			render_bg {
 				0="fill(x0,y0,x1,y0+1, lightestRed)"
-				1="gradient(x0,y0+1,x1,y1, red, darkestRed)"
+				1="gradient(x0,y0+1,x1,y1, white, darkestRed)"
 			}
 		}
-			support_alert:hover {
-				textcolor=white
-				font-family=basefont
-				font-size=15
-font-size=14 [$LINUX]
-				font-weight=1000
-				font-style=none
-				padding-left=50
-				padding-top=6
-				padding-right=50
-				inset="-8 -3 8 0"
-				render {}
-				render_bg {
-					0="fill(x0,y0,x1,y0+1, lightestRed)"
-					1="gradient(x0,y0+1,x1,y1, lightestRed, red)"
-				}
-			}
 
-// ********************************************************************************************************
-// Account Balance
-// ********************************************************************************************************
-// Used here to overwrite the normal one for the Account Balance.
-		URLLabel [$OSX] {
-			bgcolor="none"
-			textcolor="lightestYellow"
+		support_alert:hover {
+			textcolor=white
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
-			font-style="outerglow"
-			font-outerglow-color="darkestGrey"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=3
-			padding-right=20
+			font-size=14 [$LINUX]
+			font-weight=1000
+			font-style=none
+			padding-left=50
+			padding-top=6
+			padding-right=50
+			inset="-8 -3 8 0"
+			render {}
 			render_bg {
-				0="image(x1-15, y0+1, x1-3, y0+13, graphics/icons/wallet_funds)"
-			}
-		}
-		URLLabel [!$OSX] {
-			bgcolor="none"
-			textcolor="lightestYellow"
-			font-family=basefont
-			font-size=15
-font-size=14 [$LINUX]
-			font-style="outerglow"
-			font-outerglow-color="darkestGrey"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=3
-			padding-right=20
-			render_bg {
-				0="image(x1-15, y0+2, x1-3, y0+13, graphics/icons/wallet_funds)"
+				0="fill(x0,y0,x1,y0+1, lightestRed)"
+				1="gradient(x0,y0+1,x1,y1, lightestRed, white)"
 			}
 		}
 
 // ********************************************************************************************************
 // Main Window
 // ********************************************************************************************************
-// Normally this contains the logo on the main client, but it overlaps our gradients so it's integrated into CSteamRootDialog
+		// Normally this contains the logo on the main client, but it overlaps our gradients so it's integrated into CSteamRootDialog
 		ClientLogo {
 			bgcolor=none
 			textcolor=none
 			render_bg {}
 		}
-// Main Client's Background
+
+		// Main Client's Background
 		CSteamRootDialog {
 			bgcolor=none
 			render_bg {
@@ -118,66 +85,62 @@ font-size=14 [$LINUX]
 				20="fill(x0+1, y0+54, x0+2, y0+89, grey50 )"
 			}
 		}
-// The Top section of the Main Client Window
+
+		// The Top section of the Main Client Window
 		FrameTitle {
 			bgcolor="none"
 			textcolor="lightestGrey"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			render_bg {
 				1="gradient( x0, y0 - 4, x1, y1 + 18, none, none )"
 			}
 		}
-// The Top section of the Main Client Window when focused.
-			FrameTitle:framefocus {
-				bgcolor="none"
-				textcolor="trueWhite"
-				font-family=basefont
-				font-size=15
-font-size=14 [$LINUX]
-				font-weight=400
-				render_bg {
-					1="gradient( x0, y0 - 4, x1, y1 + 18, none, none )"
-				}
+
+		// The Top section of the Main Client Window when focused.
+		FrameTitle:framefocus {
+			bgcolor="none"
+			textcolor="trueWhite"
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
+			font-weight=400
+			render_bg {
+				1="gradient( x0, y0 - 4, x1, y1 + 18, none, none )"
 			}
-// The title ("Steam") for the Main Window. Here we hide it because it's ugly.
+		}
+
+		// The title ("Steam") for the Main Window. Here we hide it because it's ugly.
 		ClientTitle {
 			textcolor=none
 		}
-			ClientTitle:FrameFocus {
-				textcolor=none
-			}
+
+		ClientTitle:FrameFocus {
+			textcolor=none
+		}
+
 // ********************************************************************************************************
 // Add Game Button (Hidden)
 // ********************************************************************************************************
 		AddGameButton {
 			render_bg {}
 		}
+
 		AddGameButton:hover {
 			render_bg {}
 		}
+
 // ********************************************************************************************************
 // (Friends) "VIEW FRIENDS LIST" & "X Online"
 // ********************************************************************************************************
-// We need to make the text "VIEW FRIENDS LIST" invisible, but overlap it onto the "X Online" to make that clickable. Turns out we can't change the control of "X Online" to be clickable :(
-		view_friends {
-			textcolor="none"
-			render_bg {}
-		}
-			view_friends:Hover {
-				 textcolor="none"
-			}
-			view_friends:disabled {
-				textcolor="none"
-			}
-		online_friends [$OSX] {
+		view_friends [$OSX] {
 			bgcolor="none"
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -187,12 +150,45 @@ font-size=14 [$LINUX]
 				0="image(x1-18, y0+1, x1, y0+13, graphics/icons/friends)"
 			}
 		}
-		online_friends [!$OSX] {
+
+		view_friends [!$OSX] {
 			bgcolor="none"
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			padding-right=20
+			render_bg {
+				0="image(x1-22 , y0+13, x1, y0+13, graphics/icons/friends)"
+			}
+		}
+
+		view_friends:disabled [$OSX] {
+			bgcolor="none"
+			textcolor="lightestGrey"
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			padding-right=20
+			render_bg {
+				0="image(x1-18, y0+1, x1, y0+13, graphics/icons/friends)"
+			}
+		}
+
+		view_friends:disabled [!$OSX] {
+			bgcolor="none"
+			textcolor="lightestGrey"
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -202,36 +198,7 @@ font-size=14 [$LINUX]
 				0="image(x1-18, y0+2, x1, y0+13, graphics/icons/friends)"
 			}
 		}
-			online_friends:disabled [$OSX] {
-				bgcolor="none"
-				textcolor="lightestGrey"
-				font-family=basefont
-				font-size=15
-font-size=14 [$LINUX]
-				font-style="outerglow"
-				font-outerglow-color="darkestGrey"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3
-				padding-right=20
-				render_bg {
-					0="image(x1-18, y0+1, x1, y0+13, graphics/icons/friends)"
-				}
-			}
-			online_friends:disabled [!$OSX] {
-				bgcolor="none"
-				textcolor="lightestGrey"
-				font-family=basefont
-				font-size=15
-font-size=14 [$LINUX]
-				font-style="outerglow"
-				font-outerglow-color="darkestGrey"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3
-				padding-right=20
-				render_bg {
-					0="image(x1-18, y0+2, x1, y0+13, graphics/icons/friends)"
-				}
-			}
+
 // ********************************************************************************************************
 // (Mail Icon) Notification Icon
 // ********************************************************************************************************
@@ -241,7 +208,7 @@ font-size=14 [$LINUX]
 			textcolor=white
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -249,40 +216,43 @@ font-size=14 [$LINUX]
 			padding=6
 			render_bg {}
 		}
-			inboxmenuitem:hover {
-				textcolor=trueWhite
-				font-style="none"
-				font-outerglow-color="0 102 128 255"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3
-				render_bg {
-					0="gradient(x0+1, y0, x1-1, y1, blue, darkestBlue)"
-					1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
-				}
+
+		inboxmenuitem:hover {
+			textcolor=trueWhite
+			font-style="none"
+			font-outerglow-color="0 102 128 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			render_bg {
+				0="gradient(x0+1, y0, x1-1, y1, blue, darkestBlue)"
+				1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
 			}
+		}
+
 		// Items in dropdown menu that are UNREAD
 		inboxmenuitem_active {
 			textcolor=orange
 			render_bg {}
 		}
-			inboxmenuitem_active:hover {
-				textcolor  = orange
-				font-style="none"
-				font-outerglow-color="0 102 128 255"
-				font-outerglow-offset=1
-				font-outerglow-filtersize=3
-				render_bg {
-					0="gradient(x0+1, y0, x1-1, y1, blue, darkestBlue)"
-					1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
-				}
+
+		inboxmenuitem_active:hover {
+			textcolor="orange"
+			font-style="none"
+			font-outerglow-color="0 102 128 255"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			render_bg {
+				0="gradient(x0+1, y0, x1-1, y1, blue, darkestBlue)"
+				1="fill(x0+1, y0, x1-1, y0+1, lightestBlue)"
 			}
+		}
 
 		// No Notifications
 		inbox_button {
 			textcolor=orange
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -294,30 +264,34 @@ font-size=14 [$LINUX]
 				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications_none)"
 			}
 		}
-			// No notifications
-			inbox_button:hover {
-				render {}
+
+		// No notifications
+		inbox_button:hover {
+			render {}
+		}
+
+		// No Notifications
+		inbox_button:selected {
+			font-outerglow-color="lightestGrey"
+		}
+
+		// No Notifications
+		inbox_button:disabled {
+			textcolor=darkGreyEnd
+			padding-right=13
+			render {}
+			render_bg {
+				0="image(x0-2, y0-1, x0+9, y0+9, graphics/inbox_zero)"
+				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications_none)"
 			}
-			// No Notifications
-			inbox_button:selected {
-				font-outerglow-color="lightestGrey"
-			}
-			// No Notifications
-			inbox_button:disabled {
-				textcolor=darkGreyEnd
-				padding-right=13
-				render {}
-				render_bg {
-					0="image(x0-2, y0-1, x0+9, y0+9, graphics/inbox_zero)"
-					1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications_none)"
-				}
-			}
+		}
+
 		// Currently has Notifications
 		inbox_button_active [$OSX] {
 			textcolor=orange
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -328,11 +302,12 @@ font-size=14 [$LINUX]
 				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
 			}
 		}
+
 		inbox_button_active [!$OSX] {
 			textcolor=orange
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="outerglow"
 			font-outerglow-color="darkestGrey"
 			font-outerglow-offset=1
@@ -343,42 +318,126 @@ font-size=14 [$LINUX]
 				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
 			}
 		}
-			inbox_button_active:hover [$OSX] {
-				render {}
-				render_bg {
-					1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
-				}
+
+		inbox_button_active:hover [$OSX] {
+			render {}
+			render_bg {
+				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
 			}
-			inbox_button_active:hover [!$OSX] {
-				textcolor=lightestOrange
-				render {}
-				render_bg {
-					1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
-				}
-			}
-			inbox_button_active:selected {
-				font-outerglow-color="darkestGrey"
-				render {}
-			}
-			inbox_button_active:disabled {
-				render {}
-			}
-// ********************************************************************************************************
-// The Account ("<x>'s Account")
-// We hide it because it's not used at all. It'll be put in a menu dropdown later.
-// ********************************************************************************************************
-		AccountURLStyle {
-		  textcolor=none
 		}
-			AccountURLStyle:hover {
-				textcolor=none
+
+		inbox_button_active:hover [!$OSX] {
+			textcolor=lightestOrange
+			render {}
+			render_bg {
+				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
 			}
-			AccountURLStyle:selected {
-				textcolor=none
+		}
+
+		inbox_button_active:selected {
+			font-outerglow-color="darkestGrey"
+			render {}
+		}
+
+		inbox_button_active:disabled {
+			render {}
+		}
+
+		announcement_button {
+			textcolor=orange
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			padding-right=13
+			render {}
+			render_bg {
+				0="image(x0-2, y0+1, x0+9, y0+9, graphics/inbox_zero)"
+				1="image(x1-17, y0-2, x1-1, y0+14, graphics/updatenone_notification)"
 			}
-			AccountURLStyle:disabled {
-				textcolor=none
+		}
+
+		// No notifications
+		announcement_button:hover {
+			render {}
+		}
+
+		// No Notifications
+		announcement_button:selected {
+			font-outerglow-color="lightestGrey"
+		}
+
+		// No Notifications
+		announcement_button:disabled {
+			textcolor=darkGreyEnd
+			padding-right=13
+			render {}
+			render_bg {
+				0="image(x0-2, y0-1, x0+9, y0+9, graphics/inbox_zero)"
+				1="image(x1-17, y0-2, x1-1, y0+14, graphics/updatenone_notification)"
 			}
+		}
+
+		// Currently has Notifications
+		announcement_button_active [$OSX] {
+			textcolor=orange
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			padding-right=13
+			render {}
+			render_bg {
+				1="image(x1-17, y0-2, x1-1, y0+14, graphics/updatenew_notification)"
+			}
+		}
+
+		announcement_button_active [!$OSX] {
+			textcolor=orange
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
+			font-style="outerglow"
+			font-outerglow-color="darkestGrey"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+			padding-right=13
+			render {}
+			render_bg {
+				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
+			}
+		}
+
+		announcement_button_active:hover [$OSX] {
+			render {}
+			render_bg {
+				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
+			}
+		}
+
+		announcement_button_active:hover [!$OSX] {
+			textcolor=lightestOrange
+			render {}
+			render_bg {
+				1="image(x1-17, y0+2, x1-1, y0+14, graphics/icons/notifications)"
+			}
+		}
+
+		announcement_button_active:selected {
+			font-outerglow-color="darkestGrey"
+			render {}
+		}
+
+		announcement_button_active:disabled {
+			render {}
+		}
+
 // ********************************************************************************************************
 // Parental Locks TO DO
 // ********************************************************************************************************
@@ -388,25 +447,28 @@ font-size=14 [$LINUX]
 				0="image(x0,y0,x1,y1,graphics/family_sharing_off)"
 			}
 		}
-			parental_lock_button:hover {
-				render {}
-				render_bg {
-					0="image(x0,y0,x1,y1,graphics/family_sharing_off)"
-				}
-			}
-			parental_lock_button:selected {
-				render {}
-				render_bg {
-					0="image(x0,y0,x1,y1,graphics/family_sharing_on)"
-				}
-			}
 
-			parental_lock_button:selected:hover {
-				render {}
-				render_bg {
-					0="image(x0,y0,x1,y1,graphics/family_sharing_on)"
-				}
+		parental_lock_button:hover {
+			render {}
+			render_bg {
+				0="image(x0,y0,x1,y1,graphics/family_sharing_off)"
 			}
+		}
+
+		parental_lock_button:selected {
+			render {}
+			render_bg {
+				0="image(x0,y0,x1,y1,graphics/family_sharing_on)"
+			}
+		}
+
+		parental_lock_button:selected:hover {
+			render {}
+			render_bg {
+				0="image(x0,y0,x1,y1,graphics/family_sharing_on)"
+			}
+		}
+
 // ********************************************************************************************************
 // Menu
 // ********************************************************************************************************
@@ -417,18 +479,21 @@ font-size=14 [$LINUX]
 				0="image( x0, y0, x1,y1, graphics/supermenus/client/normal )"
 			}
 		}
-			"MenuBar MenuButton:hover" {
-				textcolor="none"
-				render_bg {
-					0="image( x0, y0, x1,y1, graphics/supermenus/client/hover )"
-				}
+
+		"MenuBar MenuButton:hover" {
+			textcolor="none"
+			render_bg {
+				0="image( x0, y0, x1,y1, graphics/supermenus/client/hover )"
 			}
-			"MenuBar MenuButton:selected" {
-				textcolor="none"
-				render_bg {
-					0="image( x0, y0, x1,y1, graphics/supermenus/client/active )"
-				}
+		}
+
+		"MenuBar MenuButton:selected" {
+			textcolor="none"
+			render_bg {
+				0="image( x0, y0, x1,y1, graphics/supermenus/client/active )"
 			}
+		}
+
 	} // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	layout {
 		place [!$OSX] {
@@ -461,6 +526,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=26
 		}
+
 // ********************************************************************************************************
 // NULL ZONE - Nullify certain controls.
 // ********************************************************************************************************
@@ -474,6 +540,7 @@ font-size=14 [$LINUX]
 			margin-top=-100
 			margin-right=300
 		}
+
 		// This places the contents of uinavigatorpanel.layout
 		place {
 			control="UINavigatorPanel"
@@ -484,6 +551,7 @@ font-size=14 [$LINUX]
 			margin-right=1
 			margin-bottom=32
 		}
+
 		place {
 			control="UIStatusPanel"
 			align=bottom
@@ -491,13 +559,15 @@ font-size=14 [$LINUX]
 			height=32
 			margin-bottom=0
 		}
+
 		place [!$OSX] {
 			control="MenuBar"
 			align=top
-			margin-left=-6
-			margin-top=22
-			width=68
+			margin-left=2
+			margin-top=-1
+			width=62
 		}
+
 		place {
 			control="ParentalLockButton"
 			align=left
@@ -506,96 +576,44 @@ font-size=14 [$LINUX]
 			width=41
 			height=23
 		}
-		// Realign the avatar and such on OSX (-8 on the Y axis, -12 on the X axis)
-		place [$OSX] {
-			control="FriendPanel"
+
+		place {
+			control="AccountButton"
 			align=right
-			width=48
-			height=48
-			y=3
-			margin-top=16
-			margin-right=16
-		}
-		place [$OSX] {
-			control="account_balance"
-			align=right
-			height=13
-			margin-top=26
-			margin-right=71
+			margin-right=135
 			dir=right
 		}
-		place [$OSX] {
+
+		place {
+			control="AnnouncementButton"
+			align=right
+			y=42
+			height=13
+			margin-right=110
+			dir=right
+			width=27
+		}
+
+		place {
 			control="InboxButton"
 			align=right
-			y=54
+			y=60
 			height=13
-			margin-right=71
+			margin-right=110
 			dir=right
 		}
-		// This is the link for opening friends list. It needs to overlap the "online_friends" control to make it pseudo-clickable.
-		place [$OSX] {
+
+		place {
 			control="view_friends"
 			align=right
-			y=9
-			width=75
-			height=13
-			margin-right=71
-			margin-top=30
-			dir=right
-		}
-		place [$OSX] {
-			control="online_friends"
-			align=right
-			y=40
-			height=13
-			margin-right=71
-			dir=right
-		}
-		// This is for the Avatar of the user.
-		place [!$OSX] {
-			control="FriendPanel"
-			align=right
-			y=14
-			width=48
-			height=48
-			margin-top=16
-			margin-right=4
-		}
-		place [!$OSX] {
-			control="InboxButton"
-			align=right
-			y=62
-			height=13
-			margin-right=59
-			dir=right
-		}
-		place [!$OSX] {
-			control="account_balance"
-			align=right
-			height=13
-			margin-top=33
-			margin-right=59
-			dir=right
-		}
-		// This is the link for opening friends list. It needs to overlap the "online_friends" control to make it pseudo-clickable.
-		place [!$OSX] {
-			control="view_friends"
-			align=right
-			y=19
-			width=75
-			height=13
+			y=10
+			width=90
+			height=40
 			margin-top=28
-			margin-right=59
+			margin-right=14
 			dir=right
 		}
-		place [!$OSX] {
-			control="online_friends"
-			align=right
-			y=47
-			height=13
-			margin-right=59
-			dir=right
-		}
+
 		place {
 			control="SupportAlert"
 			region=bottom
@@ -605,16 +623,7 @@ font-size=14 [$LINUX]
 			margin-left=1
 			margin-top=1
 		}
-		place {
-			control="ImageLogo"
-			align=right
-			x=650
-			y=0
-			width=340
-			height=133
-			margin-top=-10
-			margin-right=0
-		}
+
 		// the title bar is missing, so increase the size of the grip
 		place {
 			control="frame_captiongrip"

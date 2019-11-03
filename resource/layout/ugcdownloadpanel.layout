@@ -3,7 +3,6 @@
 		panelStyle {
 			minimum-height=150
 			bgcolor=none
-
 			render {
 				0="fill(x0,y0,x1,y0+1, black65)"
 				1="fill(x0,y0+1,x1,y0+8, lightGreyEnd)"
@@ -32,7 +31,7 @@
 			textcolor="blue"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style=normal
 			padding-left=0
 			padding-top=0
@@ -43,16 +42,18 @@ font-size=14 [$LINUX]
 				0="image(x1-15,y0+2,x1-1,y1, graphics/news)"
 			}
 		}
-			links:hover {
-				textcolor="lightestBlue"
-				font-family=basefont
-				font-size=15
-font-size=14 [$LINUX]
-				font-style=normal
-			}
-			links:disabled {
-				textcolor="grey"
-			}
+
+		links:hover {
+			textcolor="lightestBlue"
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
+			font-style=normal
+		}
+
+		links:disabled {
+			textcolor="grey"
+		}
 
 		rightcolumnlink:hover {
 			textcolor=none
@@ -63,14 +64,14 @@ font-size=14 [$LINUX]
 			bgcolor=none
 			textcolor="lightestGrey"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="regular"
 		}
 
 		// Name of the game/app
 		ModuleHeading {
 			bgcolor="none"
-			textcolor="white"
+			textcolor="White"
 			font-family=headerfont
 			font-size="38"
 			font-outerglow-color="black"
@@ -85,7 +86,7 @@ font-size=14 [$LINUX]
 			textcolor="orange"
 			font-family=basefont
 			font-size=16
-font-size=15 [$LINUX]
+			font-size=15 [$LINUX]
 			font-weight=600
 		}
 
@@ -221,14 +222,14 @@ font-size=15 [$LINUX]
 			region="column2"
 			align=left
 			x=-5
-			y=43			//line 1
+			y=43 //line 1
 		}
 
 		place {
 			control="downloadtotallabel,downloadtotalfield"
 			region="column2"
 			align=left
-			margin-top=60	//line 2
+			margin-top=60 //line 2
 			spacing=4
 		}
 
@@ -236,7 +237,7 @@ font-size=15 [$LINUX]
 			control="downloadfileslabel,downloadfilesfield"
 			region="column2"
 			align=left
-			margin-top=75	//line 3
+			margin-top=75 //line 3
 			spacing=4
 		}
 
@@ -245,7 +246,7 @@ font-size=15 [$LINUX]
 			region="column2"
 			align=left
 			x=0
-			margin-top=90	//line 4
+			margin-top=90 //line 4
 			dir="right"
 			spacing=4
 		}
@@ -255,7 +256,7 @@ font-size=15 [$LINUX]
 			region="column2"
 			align=left
 			x=0
-			margin-top=105	//line 5
+			margin-top=105 //line 5
 			spacing=4
 		}
 
@@ -263,6 +264,7 @@ font-size=15 [$LINUX]
 			control="pauseresumebutton"
 			width=34
 		}
+
 		place {
 			control="viewmodsbutton,pauseresumebutton"
 			region="column4"
@@ -280,7 +282,7 @@ font-size=15 [$LINUX]
 			region="column4"
 			align=right
 			margin-right=16
-			y=124			//line 6 + 4px
+			y=124 //line 6 + 4px
 		}
 	}
 }

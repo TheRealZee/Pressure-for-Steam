@@ -18,13 +18,15 @@
 			margin-top=20
 			margin-right=43
 		}
+
 		place {
 			controls=OverlayHomePageLabel
 			start=DescriptionLabel
-			width=200
+			width=215
 			margin-top=20
 			dir=down
 		}
+
 		place {
 			controls=OverlayHomePage
 			start=OverlayHomePageLabel
@@ -33,6 +35,7 @@
 			margin-right=43
 			dir=down
 		}
+
 		place {
 			controls=ClientBrowserAuthHomePage
 			start=OverlayHomePage
@@ -41,6 +44,7 @@
 			margin-right=43
 			dir=down
 		}
+
 		place {
 			controls=Divider1
 			region=bottom
@@ -50,20 +54,22 @@
 			margin-right=43
 			dir=down
 		}
+
 		place {
 			controls=ClearAllCookiesButton
 			region=bottom
 			start=Divider1
-			width=240
+			width=260
 			height=28
 			margin-top=15
 			dir=down
 		}
+
 		place {
 			controls=ClearWebCacheButton
 			region=bottom
 			start=ClearAllCookiesButton
-			width=240
+			width=260
 			height=28
 			margin-top=15
 			dir=down

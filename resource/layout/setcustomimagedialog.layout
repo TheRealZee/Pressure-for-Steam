@@ -29,6 +29,7 @@
 			width=max
 			height=51
 		}
+
 		place {
 			control="ChooseAnImage"
 			region="top"
@@ -46,6 +47,7 @@
 			margin-right=16
 			dir=down
 		}
+
 		place {
 			control="ThisFile"
 			region="middle"
@@ -81,6 +83,7 @@
 			margin-left=16
 			dir=right
 		}
+
 		place {
 			control="OK,Cancel"
 			region="bottom"

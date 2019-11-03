@@ -2,52 +2,62 @@
 	styles {
 		topfade {
 			render_bg {
-				0="fill( x0, y0, x1, y1, black75)"
+				0="fill( x0, y0, x1, y1, black75 )"
 			}
 		}
+
 		bottomfade {
 			render_bg {
-				0="fill( x0, y0, x1, y1, black75)"
+				0="fill( x0, y0, x1, y1, black75 )"
 			}
 		}
+
 		hotkey {
 			textcolor=none
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style=none
 		}
+
 		topbar {
-			textcolor=white
+			textcolor=White
 			font-family=headerfont
 			font-size=48
 			render_bg {}
 		}
+
 		detailsboxtitle {
-			textcolor=red
+			textcolor=White
 		}
+
 		OverlayURLLabel {
 			image=graphics/overlay/close
 		}
-			OverlayURLLabel:hover {
-				image=graphics/overlay/close_hover
-			}
+
+		OverlayURLLabel:hover {
+			image=graphics/overlay/close_hover
+		}
+
 		LabelOverlay {
 			image=graphics/overlay/browsersettingsmusic
 		}
 	}
+
 	layout {
 		region {
 			name=overlay
 			align=top-center
 			width=max
 		}
+
 		region {
 			name="topbar"
 			region=overlay
 			align=top-center
 			width="max"
-			height=112
+			height=146
 		}
+
 		region {
 			name="taskbar"
 			region=overlay
@@ -55,18 +65,21 @@ font-size=14 [$LINUX]
 			width="max"
 			height=146
 		}
+
 		place {
 			control="TopFadePanel"
 			align=top
 			width=max
-			height=112
+			height=146
 		}
+
 		place {
 			control="BottomFadePanel"
 			align=bottom
 			width=max
 			height=146
 		}
+
 		place {
 			controls="gamename"
 			region=topbar
@@ -74,6 +87,7 @@ font-size=14 [$LINUX]
 			y=8
 			x=16
 		}
+
 		place {
 			control="CloseButton"
 			region=topbar
@@ -81,6 +95,7 @@ font-size=14 [$LINUX]
 			y=36
 			margin-right=39 // There is a 3px weirdness offset. This accounts for that.
 		}
+
 		// Used for the icons
 		place {
 			control=HotkeyExplain
@@ -90,6 +105,7 @@ font-size=14 [$LINUX]
 			dir=right
 			y=46
 		}
+
 		place {
 			control="TaskbarPanel"
 			region=taskbar
@@ -97,6 +113,7 @@ font-size=14 [$LINUX]
 			width=480
 			height=145
 		}
+
 		place {
 			control="HotkeyLabel,powermeter,PowerMeterDim"
 			width=0

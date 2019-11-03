@@ -52,7 +52,7 @@
 			minimum-height=240
 		}
 		publishcaption {
-			textcolor="white"
+			textcolor="White"
 			font-size=17
 			font-style="italic"
 			inset=2
@@ -61,10 +61,10 @@
 			textcolor="111 111 111 255"
 		}
 		publishcharsleft {
-			textcolor=white
+			textcolor=White
 		}
 		publishcharsleft_toomanychars {
-			textcolor=red
+			textcolor=White
 		}
 		WrapPanel {
 			bgcolor="none"
@@ -75,7 +75,7 @@
 
 		gameselector {
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
 			font-weight=700
 			inset="6 0 0 0"
@@ -100,26 +100,26 @@ font-size=14 [$LINUX]
 		}
 		NoSelectionInstructions {
 			font-size=16
-font-size=15
-font-size=14 [$LINUX]
+			font-size=15
+			font-size=14 [$LINUX]
 			font-family=basefont
 		}
 
 		CScreenshotCaptionEntry:empty {
 			bgcolor= "none"
-			selectedtextcolor= "white"
+			selectedtextcolor= "red"
 			selectedbgcolor= "blue"
 			shadowtextcolor= "darkestGrey"// this is the cursor color
 			textcolor= "darkestGrey"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			padding-left=14
 			inset-left=0
 			inset-top=0
 
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, White)"
 
 				// TOP
 				1="image(x0,y0,x0+3,y0+4, graphics/textEntry/topLeft)"

@@ -7,7 +7,7 @@
 		button {
 			textcolor=blue
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
 			inset-left=0
 			padding-left=24
@@ -15,17 +15,16 @@ font-size=14 [$LINUX]
 			padding-bottom=15
 
 			render_bg {
-				1="image(x0,y0,x0+26,y1, graphics/overlay/guides)"
+				1="image( x0, y0, x0 + 26, y1, graphics/overlay/guides )"
 			}
 		}
 
-			button:hover {
-				textcolor=lightestBlue
-
-				render_bg {
-					1="image(x0,y0,x0+26,y1, graphics/overlay/guides_hover)"
-				}
+		button:hover {
+			textcolor=lightestBlue
+			render_bg {
+				1="image( x0, y0, x0 + 26, y1, graphics/overlay/guides_hover )"
 			}
+		}
 
 		highlight {
 			textcolor=lightestGrey
@@ -55,7 +54,6 @@ font-size=14 [$LINUX]
 			x=30
 			y=-14
 		}
-
 
 		place {
 			control="TitleText,*guideitem"

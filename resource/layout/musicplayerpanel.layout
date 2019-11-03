@@ -2,6 +2,7 @@
 	colors {
 		fakeGrey "55 55 55 255"
 	}
+
 	styles {
 		ListPanelColumnHeader {
 			minimum-height=0
@@ -11,13 +12,11 @@
 			bgcolor=darkestGrey
 			minimum-width = 440
 			minimum-height = 118//92
-
 			render {
 				0="gradient(x0+1,y1-27,x1-1,y1-20, grey, fakeGrey)"
 				1="fill(x0+1,y1-28,x1-1,y1-27, darkestGrey)"
 			}
 			render_bg {
-
 				// top area and graphic
 				0="fill( x0, y0, x1, y01, darkestGrey)"
 				2="gradient( x0+1, y0+1, x1-1, y0+92, grey, lightGreyEnd )"
@@ -43,13 +42,12 @@
 		MusicListPanelInterior {
 			bgcolor="darkestGrey"
 			selectedbgcolor="blue"
-			selectedtextcolor="truewhite"
-			textcolor="white"
+			selectedtextcolor="truered"
+			textcolor="red"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			padding="6"
 			inset="-3 -1 -2 0"
-
 			render {
 				0="gradient(x0,y1-6,x1,y1, none, black65)"
 				1="gradient(x0,y0,x1,y0+6, black65, none)"
@@ -66,16 +64,16 @@ font-size=14 [$LINUX]
 		ListPanelInterior {
 			bgcolor=none
 			selectedbgcolor="blue"
-			selectedtextcolor="truewhite"
-			textcolor="white"
+			selectedtextcolor="truered"
+			textcolor="red"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			inset="0 0 0 -10"
 			render {
 				//line at top
 			//	0="fill( x0, y0-3, x1+1, y0-2, darkestGrey )"
 			//	1="fill( x0, y0-2, x1, y0-1, greyHighlight )"
-			//	5="fill( x0, y1, x1+1, y1 +1, darkestGrey )"  // bottom
+			//	5="fill( x0, y1, x1+1, y1 +1, darkestGrey )" // bottom
 			}
 			render_bg {
 			//	1="fill( x0, y0, x1, y1, lightGreyEnd )"
@@ -86,7 +84,6 @@ font-size=14 [$LINUX]
 		ClientTitle [!$OSX] {
 			bgcolor=none
 			textcolor=none
-
 			render_bg {}
 		}
 
@@ -95,25 +92,27 @@ font-size=14 [$LINUX]
 			textcolor="textdisabled"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
-	  		font-weight=400
-	  		inset="0 6 0 0"
+			font-size=14 [$LINUX]
+			font-weight=400
+			inset="0 6 0 0"
 		}
-			ClientTitle:FrameFocus [$OSX] {
-				bgcolor="none"
-				textcolor="texthover"
-				font-family=basefont
-   				font-size=15
-font-size=14 [$LINUX]
-   				font-weight=400
-   				inset="0 6 0 0"
-			}
+
+		ClientTitle:FrameFocus [$OSX] {
+			bgcolor="none"
+			textcolor="texthover"
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
+			font-weight=400
+			inset="0 6 0 0"
+		}
 
 		CurrentAlbumImageStyle {
 			render {
 				0="image(x0-4,y0-4,x1+4,y1+4, graphics/album_shadow_mini)"
 			}
 		}
+
 		RepeatButtonStyle {
 			bgcolor=none
 			inset="0"
@@ -121,23 +120,26 @@ font-size=14 [$LINUX]
 			image=graphics/music/repeat
 			render_bg {}
 		}
-			RepeatButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/repeat
-				inset="0"
-				padding="0"
-				render_bg {}
-			}
-			RepeatButtonStyle:selected {
-				bgcolor=none
-				image=graphics/music/repeat_active
-				render_bg {}
-			}
-				RepeatButtonStyle:selected:hover {
-					bgcolor=none
-					image=graphics/music/repeat_active
-					render_bg {}
-				}
+
+		RepeatButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/repeat
+			inset="0"
+			padding="0"
+			render_bg {}
+		}
+
+		RepeatButtonStyle:selected {
+			bgcolor=none
+			image=graphics/music/repeat_active
+			render_bg {}
+		}
+
+		RepeatButtonStyle:selected:hover {
+			bgcolor=none
+			image=graphics/music/repeat_active
+			render_bg {}
+		}
 
 		RepeatOnceButtonStyle {
 			bgcolor=none
@@ -148,39 +150,44 @@ font-size=14 [$LINUX]
 			}
 			render_bg {}
 		}
-			RepeatOnceButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/repeat_once
-				inset="0"
-				padding="0"
-				render_bg {}
-			}
-			RepeatOnceButtonStyle:selected {
-				bgcolor=none
-				image=graphics/music/repeat_active_once
-				render_bg {}
-			}
-				RepeatOnceButtonStyle:selected:hover {
-					bgcolor=none
-					image=graphics/music/repeat_active_once
-					render_bg {}
-				}
+
+		RepeatOnceButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/repeat_once
+			inset="0"
+			padding="0"
+			render_bg {}
+		}
+
+		RepeatOnceButtonStyle:selected {
+			bgcolor=none
+			image=graphics/music/repeat_active_once
+			render_bg {}
+		}
+
+		RepeatOnceButtonStyle:selected:hover {
+			bgcolor=none
+			image=graphics/music/repeat_active_once
+			render_bg {}
+		}
 
 		ShuffleButtonStyle {
 			bgcolor=none
 			image=graphics/music/shuffle
 			render_bg {}
 		}
-			ShuffleButtonStyle:selected	{
-				bgcolor=none
-				image=graphics/music/shuffle_active
-				render_bg {}
-			}
-				ShuffleButtonStyle:selected:hover {
-					bgcolor=none
-					image=graphics/music/shuffle_active
-					render_bg {}
-				}
+
+		ShuffleButtonStyle:selected	{
+			bgcolor=none
+			image=graphics/music/shuffle_active
+			render_bg {}
+		}
+
+		ShuffleButtonStyle:selected:hover {
+			bgcolor=none
+			image=graphics/music/shuffle_active
+			render_bg {}
+		}
 
 		PreviousButtonStyle {
 			bgcolor=none
@@ -188,22 +195,24 @@ font-size=14 [$LINUX]
 			image=graphics/music/previous
 			render_bg {}
 		}
-			PreviousButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/previous_active
-				render_bg {}
-			}
+
+		PreviousButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/previous_active
+			render_bg {}
+		}
 
 		NextButtonStyle	{
 			bgcolor=none
 			image=graphics/music/next
 			render_bg {}
 		}
-			NextButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/next_active
-				render_bg {}
-			}
+
+		NextButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/next_active
+			render_bg {}
+		}
 
 		PlayButtonStyle {
 			bgcolor=none
@@ -214,24 +223,24 @@ font-size=14 [$LINUX]
 			image=graphics/music/play
 			render_bg {}
 		}
-			PlayButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/play_hover
 
-				render_bg {}
-			}
-			PlayButtonStyle:active {
-				bgcolor=none
-				image=graphics/music/play_active
+		PlayButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/play_hover
+			render_bg {}
+		}
 
-				render_bg {}
-			}
-			PlayButtonStyle:selected {
-				bgcolor=none
-				image=graphics/music/play_active
+		PlayButtonStyle:active {
+			bgcolor=none
+			image=graphics/music/play_active
+			render_bg {}
+		}
 
-				render_bg {}
-			}
+		PlayButtonStyle:selected {
+			bgcolor=none
+			image=graphics/music/play_active
+			render_bg {}
+		}
 
 		PauseButtonStyle {
 			bgcolor=none
@@ -242,21 +251,24 @@ font-size=14 [$LINUX]
 			image=graphics/music/pause
 			render_bg {}
 		}
-			PauseButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/pause_hover
-				render_bg {}
-			}
-			PauseButtonStyle:active {
-				bgcolor=none
-				image=graphics/music/pause_active
-				render_bg {}
-			}
-			PauseButtonStyle:selected {
-				bgcolor=none
-				image=graphics/music/pause_active
-				render_bg {}
-			}
+
+		PauseButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/pause_hover
+			render_bg {}
+		}
+
+		PauseButtonStyle:active {
+			bgcolor=none
+			image=graphics/music/pause_active
+			render_bg {}
+		}
+
+		PauseButtonStyle:selected {
+			bgcolor=none
+			image=graphics/music/pause_active
+			render_bg {}
+		}
 
 		VolumeButtonStyle {
 			bgcolor=none
@@ -264,11 +276,12 @@ font-size=14 [$LINUX]
 			image=graphics/music/volume
 			render_bg {}
 		}
-			VolumeButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/volume_hover
-				render_bg {}
-			}
+
+		VolumeButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/volume_hover
+			render_bg {}
+		}
 
 		VolumeButtonActiveStyle {
 			bgcolor=none
@@ -276,11 +289,12 @@ font-size=14 [$LINUX]
 			image=graphics/music/volume_active
 			render_bg {}
 		}
-			VolumeButtonActiveStyle:hover {
-				bgcolor=none
-				image=graphics/music/volume_hover
-				render_bg {}
-			}
+
+		VolumeButtonActiveStyle:hover {
+			bgcolor=none
+			image=graphics/music/volume_hover
+			render_bg {}
+		}
 
 		MuteVolumeButtonStyle {
 			bgcolor=none
@@ -288,11 +302,12 @@ font-size=14 [$LINUX]
 			image=graphics/music/volume_mute
 			render_bg {}
 		}
-			MuteVolumeButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/volume_mute_hover
-				render_bg {}
-			}
+
+		MuteVolumeButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/volume_mute_hover
+			render_bg {}
+		}
 
 		MuteVolumeButtonActiveStyle {
 			bgcolor=none
@@ -300,11 +315,12 @@ font-size=14 [$LINUX]
 			image=graphics/music/volume_mute_active
 			render_bg {}
 		}
-			MuteVolumeButtonActiveStyle:hover {
-				bgcolor=none
-				image=graphics/music/volume_mute_hover
-				render_bg {}
-			}
+
+		MuteVolumeButtonActiveStyle:hover {
+			bgcolor=none
+			image=graphics/music/volume_mute_hover
+			render_bg {}
+		}
 
 		BrowseButtonStyle {
 			bgcolor=none
@@ -312,35 +328,35 @@ font-size=14 [$LINUX]
 			inset-top=-1
 			render_bg {}
 		}
-			BrowseButtonStyle:hover {
-				bgcolor=none
-				image=graphics/music/details_active
-				render_bg {}
-			}
+
+		BrowseButtonStyle:hover {
+			bgcolor=none
+			image=graphics/music/details_active
+			render_bg {}
+		}
 
 		StatusStyle	{
-			textcolor="white"
+			textcolor="red"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=600
 			render_bg {}
 		}
 
 		StatusStyleDim	{
-			textcolor="White"
+			textcolor="red"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style=normal
 			render_bg {}
 		}
 
 		InfoLabelStyle	{
-			textcolor="White"
+			textcolor="red"
 			font-family=basefont
 			font-size=14
-
 			render_bg {}
 		}
 
@@ -349,7 +365,6 @@ font-size=14 [$LINUX]
 		NoTracksLabelStyle {
 			bgcolor=none
 			image=""
-
 			render_bg {}
 		}
 	}
@@ -362,6 +377,7 @@ font-size=14 [$LINUX]
 			width=269
 			height=70
 		}
+
 		region {
 			name=currenttrack
 			x=10
@@ -380,6 +396,7 @@ font-size=14 [$LINUX]
 			height=51
 			margin=0
 		}
+
 		place {
 			control="CurrentTrackLabel"
 			region=currenttrack
@@ -387,6 +404,7 @@ font-size=14 [$LINUX]
 			y=2
 			width=max
 		}
+
 		place {
 			control="CurrentArtistLabel"
 			region=currenttrack
@@ -394,6 +412,7 @@ font-size=14 [$LINUX]
 			y=20
 			width=max
 		}
+
 		place {
 			control="CurrentStatusLabel"
 			region=currenttrack
@@ -412,6 +431,7 @@ font-size=14 [$LINUX]
 			margin=0
 			spacing=0
 		}
+
 		place {
 			control="PlayPauseButton"
 			region=transport
@@ -420,6 +440,7 @@ font-size=14 [$LINUX]
 			width=50
 			height=50
 		}
+
 		place {
 			control="NextButton,VolumeButton,BrowseButton"
 			region=transport
@@ -429,6 +450,7 @@ font-size=14 [$LINUX]
 			width=33
 			spacing=0
 		}
+
 		place {
 			control="TrackList"
 			x=1
@@ -439,6 +461,7 @@ font-size=14 [$LINUX]
 			margin-right=-1
 			margin-bottom=27
 		}
+
 		place {
 			control="NoTracksLabel"
 			align="top-center"
@@ -449,6 +472,7 @@ font-size=14 [$LINUX]
 			margin-top=-1
 			margin-bottom=28
 		}
+
 		place {
 			control="InfoLabel"
 			align=bottom
@@ -459,6 +483,7 @@ font-size=14 [$LINUX]
 			margin-top=-1
 			margin-bottom=7
 		}
+
 		place { control=SeekBar region=transport x=0 y=50 height=18 width=260 }
 	}
 }

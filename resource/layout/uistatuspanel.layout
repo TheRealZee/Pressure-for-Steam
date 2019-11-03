@@ -16,7 +16,7 @@
 			font-outerglow-filtersize=1
 			font-outerglow-offset=1
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="normal,outerglow"
 			font-weight=400
 			inset="0 2 0 0"
@@ -31,7 +31,7 @@ font-size=14 [$LINUX]
 			font-outerglow-filtersize=1
 			font-outerglow-offset=1
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="normal,outerglow"
 			font-weight=400
 			render_bg {}
@@ -43,7 +43,7 @@ font-size=14 [$LINUX]
 			font-outerglow-filtersize=1
 			font-outerglow-offset=1
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="normal;outerglow"
 			font-weight=400
 			inset="0 2 0 0"
@@ -55,11 +55,12 @@ font-size=14 [$LINUX]
 			font-outerglow-filtersize=1
 			font-outerglow-offset=1
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style="normal;outerglow"
 			font-weight=400
 		}
 	}
+
 	layout {
 		region {
 			name="ProgressRegion"
@@ -68,12 +69,14 @@ font-size=14 [$LINUX]
 			height=max
 			margin=0
 		}
+
 		region {
 			name="StatusRegion"
 			align=bottom
 			width=max
 			height=max
 		}
+
 		place {
 			control=StatusProgressbar
 			region=ProgressRegion
@@ -82,6 +85,7 @@ font-size=14 [$LINUX]
 			width=450
 			height=2
 		}
+
 		place {
 			control="StatusDownloading, StatusPaused, StatusComplete"
 			align="top-center"

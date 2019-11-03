@@ -4,7 +4,7 @@
 			render_bg [!$OSX&&!$LINUX] {
 				0="fill(x0+18,y0+315,x1-43,y0+316, black65)"
 				1="fill(x0+18,y0+316,x1-43,y0+317, grey50)"
-			} 
+			}
 			render_bg [$OSX||$LINUX] {
 				0="fill(x0+18,y0+275,x1-43,y0+276, black65)"
 				1="fill(x0+18,y0+276,x1-43,y0+277, grey50)"
@@ -86,6 +86,7 @@
 			dir=down
 			spacing=-6
 		}
+
 		place {
 			controls=ScreenshotLabel
 			start=Divider1
@@ -162,7 +163,6 @@
 			width=max
 			dir=right
 		}
-
 
 		place {
 			control="TitleLabel"

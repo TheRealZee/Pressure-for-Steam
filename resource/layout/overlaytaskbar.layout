@@ -3,20 +3,18 @@
 		taskbar {
 			textcolor=blue
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
 			font-style=none
 			padding-right=20
-
 			render_bg {}
 		}
 
-			taskbar:hover {
-				textcolor=lightestBlue
-			}
+		taskbar:hover {
+			textcolor=lightestBlue
+		}
 
 		view_friends {}
-		online_friends {}
 	}
 
 	layout {
@@ -46,7 +44,7 @@ font-size=14 [$LINUX]
 		}
 
 		place {
-			control="SteamLogo,FriendPanel,view_friends,online_friends,ScreenshotsButton,TaskbarPanel"
+			control="SteamLogo,view_friends,ScreenshotsButton,TaskbarPanel"
 			width=0
 			height=0
 		}

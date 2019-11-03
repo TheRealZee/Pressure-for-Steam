@@ -5,6 +5,7 @@
 			width=max
 			height=54
 		}
+
 		//Bottom
 		region {
 			name=bottom

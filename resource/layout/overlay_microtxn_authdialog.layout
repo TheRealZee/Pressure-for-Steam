@@ -13,15 +13,15 @@
 		}
 
 		BalanceStyle {
+			textcolor=darkestGrey
 			render_bg {
 				// background fill
 				0="gradient( x0 - 6, y0, x1 + 6, y1, green, darkestGreen)"
 
 				// lines around
-				1="fill( x0 - 5, y0 - 1, x1 + 5, y0    , lightestGreen )"  // top
-				2="fill( x0 - 5, y1    , x1 + 5, y1 + 1, darkestGreen )"  // bottom
+				1="fill( x0 - 5, y0 - 1, x1 + 5, y0, lightestGreen )" // top
+				2="fill( x0 - 5, y1, x1 + 5, y1 + 1, darkestGreen )" // bottom
 			}
-			textcolor=darkestGrey
 		}
 
 		TotalAmtStyle {
@@ -56,6 +56,7 @@
 			}
 		}		
 	}
+
 	layout {
 		region {
 			name="main"
@@ -81,6 +82,7 @@
 			width="max"
 			height=51
 		}
+
 		place {
 			control=BalanceDescLabel,BalanceLabel
 			align=right
@@ -89,6 +91,7 @@
 			dir=left
 			spacing=10
 		}
+
 		place {
 			control=AuthorizeButton,CancelButton
 			region=buttons
@@ -99,6 +102,7 @@
 			dir=left
 			spacing=8
 		}
+
 		place {
 			control=ReasonLabel,ItemList
 			region=main

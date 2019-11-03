@@ -3,7 +3,6 @@
 		CScreenshotUploadDialog {
 			minimum-width=465
 			minimum-height=300
-
 			render_bg {
 				1="fill( x0, y1-51, x1, y1-50, darkestGrey )"
 				2="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
@@ -12,26 +11,32 @@
 				4="image(x0+20,y0+70,x1,y1, graphics/dialogs/screenshotUpload)"
 			}
 		}
+
 		visibility_options {
 			minimum-width=100
 		}
 
 		SlimProgressBar {
 			textcolor=green
-
 			render {}
 			render_bg {
-			        0="fill( x0, y0, x1, y1, black )"
-			        1="fill(x0,y1,x1,y1+1, grey50)"
+				0="fill( x0, y0, x1, y1, black )"
+				1="fill(x0,y1,x1,y1+1, grey50)"
 			}
 		}
 
 		SlimProgressBarError {
-			textcolor="red"
+			textcolor="White"
 		}
 	}
 
 	layout {
+		region {
+			name="bottom"
+			height=51
+			align=bottom
+		}
+
 		place {
 			control="upload_question"
 			x=175
@@ -118,12 +123,6 @@
 			y=195
 			margin-left=4
 			width=275
-		}
-
-		region {
-			name="bottom"
-			height=51
-			align=bottom
 		}
 
 		place {

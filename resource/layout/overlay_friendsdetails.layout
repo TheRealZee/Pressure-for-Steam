@@ -7,27 +7,25 @@
 		button {
 			textcolor=blue
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
 			inset-left=0
 			padding-left=24
 			padding-top=0
 			padding-bottom=15
 			minimum-width=160
-
 			render_bg {
-				0="image(x0,y0,x0+26,y1, graphics/overlay/friends)"
+				0="image( x0, y0, x0 + 26, y1, graphics/overlay/friends )"
 			}
 		}
 
-			button:hover {
-				textcolor=lightestBlue
-
-				render {
-					0="image(x0,y0,x0+26,y1, graphics/overlay/friends_hover)"
-				}
-				render_bg {}
+		button:hover {
+			textcolor=lightestBlue
+			render {
+				0="image( x0, y0, x0 + 26, y1, graphics/overlay/friends_hover )"
 			}
+			render_bg {}
+		}
 
 		FriendsGrid {
 			render_bg {}

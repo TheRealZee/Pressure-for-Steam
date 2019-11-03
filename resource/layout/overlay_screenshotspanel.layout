@@ -7,26 +7,23 @@
 		button {
 			textcolor=blue
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
+			inset-left=0
 			padding-left=24
 			padding-top=0
 			padding-bottom=15
-			inset-left=0
-
 			render_bg {
-				0="image(x0,y0,x0+26,y1, graphics/overlay/screenshots)"
+				0="image( x0, y0 + 6, x0 + 26, y1, graphics/overlay/screenshots )"
 			}
 		}
 
-			button:hover {
-				textcolor=lightestBlue
-
-				render {
-					1="image(x0,y0,x0+26,y1, graphics/overlay/screenshots_hover)"
-				}
-				render_bg {}
+		button:hover {
+			textcolor=lightestBlue
+			render {
+				1="image( x0, y0 + 6, x0 + 26, y1, graphics/overlay/screenshots_hover )"
 			}
+		}
 
 		highlight {
 			textcolor=lightestGrey
@@ -53,7 +50,7 @@ font-size=14 [$LINUX]
 			controls=InstructionText
 			start=ViewScreenshots
 			x=30
-			y=-14
+			y=-20
 			dir=down
 		}
 

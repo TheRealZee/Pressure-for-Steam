@@ -10,28 +10,30 @@
 			render {}
 			render_bg {}
 		}
+
 		emptylisttext {
-			textcolor="red"
+			textcolor="White"
 			font-size=14
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			inset="16 100 16 16"
 			render_bg {
 				0="fill(x0,y0,x0+320,y1, black90)"
 				1="image(x0+130, y0+30, x1, y1, resource/icon_warning)"
 			}
 		}
+
 		// Some overrides for our listpanel
 		"GamesPage_Details ListPanel" {
 			bgcolor="blue"
 			padding-left=4
 			padding-right=0
 			inset="0 1 0 -2"
-
 			render {}
 			render_bg {}
 		}
 
-		"GamesPage_Details ListPanelInterior" {
+		"GamesPage_Details ListPanelInterior"
+		{
 			bgcolor="darkestGrey"
 			inset="0 0 0 0"
 			minimum-width=320
@@ -39,15 +41,15 @@ font-size=14 [$LINUX]
 			render_bg {}
 		}
 
-			"GamesPage_Details ListPanelInterior:scrollbar" {
-				bgcolor=none
-				inset="0 0 0 0"
-				render {}
-				render_bg {}
-			}
+		"GamesPage_Details ListPanelInterior:scrollbar" {
+			bgcolor=none
+			inset="0 0 0 0"
+			render {}
+			render_bg {}
+		}
+
 		"GamesPage_Details ListPanelDragger" {
 			bgcolor="none"
-
 			render {}
 			render_bg {}
 		}
@@ -59,47 +61,44 @@ font-size=14 [$LINUX]
 			font-weight=800
 			inset="0 0 0 0"
 			minimum-height=1
-
 			render {}
 		}
 
 		"CGamesListPanel ListPanelColumnSelectButton" {
-       		bgcolor=none
-       		padding-left=0
-       		padding-right=0
-       		inset="13 2 0 0"
-       		minimum-width=8
-       		minimum-height=8
-
-        	render {
-          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
-        	}
-        	render_bg {
-        		0="fill(x0,y0,x1,y1, darkestGrey)"
-        	}
+			bgcolor=none
+			padding-left=0
+			padding-right=0
+			inset="13 2 0 0"
+			minimum-width=8
+			minimum-height=8
+			render {
+				5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog )"
+			}
+			render_bg {
+				0="fill(x0,y0,x1,y1, darkestGrey)"
+			}
 		}
 
-			"CGamesListPanel ListPanelColumnSelectButton:selected" {
-	       		bgcolor=none
-	       		padding-left=0
-	       		padding-right=0
-	       		inset="13 2 0 0"
-	        	minimum-width=8
-	       		minimum-height=8
-	        	render {
-	          		5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog_active )"
-	        	}
-	        	render_bg {
-	        		0="fill(x0,y0,x1,y1, darkestGrey)"
-	        	}
+		"CGamesListPanel ListPanelColumnSelectButton:selected" {
+			bgcolor=none
+			padding-left=0
+			padding-right=0
+			inset="13 2 0 0"
+			minimum-width=8
+			minimum-height=8
+			render {
+				5="image( x0 + 10, y0 + 5, x1, y1, graphics/cog_active )"
 			}
-
+			render_bg {
+				0="fill(x0,y0,x1,y1, darkestGrey)"
+			}
+		}
 
 		headerimage {
 			bgcolor="0 0 0 0"
-
 			render {}
 		}
+
 		rightcolumnheadertext {
 			bgcolor=black65
 			textcolor=none
@@ -108,49 +107,51 @@ font-size=14 [$LINUX]
 			inset="0 0 0 0"
 		}
 
-			rightcolumnheadertext-red {
-				bgcolor=black65
-				textcolor=none
-				font-family=headerfont
-				font-size=0
-				inset="0 0 0 0"
-			}
+		rightcolumnheadertext-red {
+			bgcolor=black65
+			textcolor=none
+			font-family=headerfont
+			font-size=0
+			inset="0 0 0 0"
+		}
 
-			rightcolumnheadertext-green {
-				bgcolor=black65
-				textcolor=none
-				font-family=headerfont
-				font-size=0
-				inset="0 0 0 0"
-			}
+		rightcolumnheadertext-green {
+			bgcolor=black65
+			textcolor=none
+			font-family=headerfont
+			font-size=0
+			inset="0 0 0 0"
+		}
 
-			rightcolumnheadertext-blue {
-				bgcolor=black65
-				textcolor=none
-				font-family=headerfont
-				font-size=0
-				inset="0 0 0 0"
-			}
+		rightcolumnheadertext-blue {
+			bgcolor=black65
+			textcolor=none
+			font-family=headerfont
+			font-size=0
+			inset="0 0 0 0"
+		}
+
 		rightcolumnlink {
 			textcolor=blue
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style=normal
 			font-family=basefont
 		}
-			rightcolumnlink:hover {
-				textcolor=lightestBlue
-			}
 
-			rightcolumnlink:disabled {
-				textcolor=darkestBlue
-			}
+		rightcolumnlink:hover {
+			textcolor=lightestBlue
+		}
+
+		rightcolumnlink:disabled {
+			textcolor=darkestBlue
+		}
 
 		rightcolumntag {
 			textcolor=Label
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-style=normal
 			padding-left=10
 			padding-top=0
@@ -163,6 +164,7 @@ font-size=14 [$LINUX]
 			render {}
 		}
 	}
+
 	layout {
 		region {
 			name="list"
@@ -217,6 +219,7 @@ font-size=14 [$LINUX]
 			margin-right=-15
 			overflow=allow-vertical
 		}
+
 		// Empty list text, which goes across regions
 		place {
 			control=emptylisttext
@@ -225,6 +228,7 @@ font-size=14 [$LINUX]
 			width=320
 			height=max
 		}
+
 		// Games list on left
 		place {
 			control=GamesList
@@ -270,8 +274,9 @@ font-size=14 [$LINUX]
 			width=0
 			height=0
 		}
+
 		// Main header image is at the bottom, then one of three color overlays is visible, and finally the
-		// horizontal fade out gradient on the top.  We have an a and a b image, which we crossfade between.
+		// horizontal fade out gradient on the top. We have an a and a b image, which we crossfade between.
 		place {
 			control=headerimagea
 			x=320
@@ -287,6 +292,7 @@ font-size=14 [$LINUX]
 			width=1024
 			height=550
 		}
+
 		// Header text
 		place {
 			control=gametitleheader

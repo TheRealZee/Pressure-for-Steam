@@ -1,12 +1,12 @@
 "resource/layout/layoutdebugdialog.layout" {
-	controls	{
+	controls {
 		wiki_link {
 			controlname="URLLabel"
 			labeltext="VGUI Editor Wiki Page" 
 			urltext="https://developer.valvesoftware.com/wiki/VGUI_Editing"
 		}
 	}
-	
+
 	layout {
 		place {
 			control="containerlabel,fileurl"
@@ -17,6 +17,7 @@
 			spacing=10
 			margin=4
 		}
+
 		place {
 			control="selectionlabel"
 			y=48
@@ -26,7 +27,7 @@
 			spacing=10
 			margin=4
 		}
-		
+
 		place {
 			control="tabs"
 			y=64
@@ -35,6 +36,7 @@
 			margin=8
 			margin-bottom=32
 		}
+
 		place {
 			control="wiki_link"
 			align=bottom
