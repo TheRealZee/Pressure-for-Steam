@@ -10,8 +10,9 @@ You must also ensure that you are using the current BETA version of Steam, as ot
 
 ### Images (As of 4th April 2015)
 Here are a couple images of the skin. The look and feel of the skin can change at any time, so what you see in these images might not be what you see when you download the skin.
-![Pressure](http://hydra.tf/pressure/images/pressure-downloadpage.png)
-* [**Photo**](http://hydra.tf/pressure/images/pressure-downloadpage.png)
+![Image1](66c62a91a423a873b4a1b1cfa75d9a08.jpg)
+![Image2](downloads.jpg)
+![Image3](settings.jpg)
 ## Downloading and Installing
 Because the skin is still in development, you can only download the skin here on GitHub until the skin is ready for the public to download.  To do that, just follow these steps:
 
