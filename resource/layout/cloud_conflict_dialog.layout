@@ -3,7 +3,7 @@
 
 	styles {
 		intro {
-			textcolor=red
+			textcolor=White
 			font-size=14
 			font-family=semibold
 		}
@@ -11,15 +11,15 @@
 		bold {
 			textcolor=text
 			font-size=16
-font-size=15
-font-size=14 [$LINUX]
+			font-size=15
+			font-size=14 [$LINUX]
 			font-family=semibold
 			font-weight=700
 			font-style=uppercase
 		}
 
 		text {
-			textcolor=white
+			textcolor=White
 			font-size=14
 		}
 

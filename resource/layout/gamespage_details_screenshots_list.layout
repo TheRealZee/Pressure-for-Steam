@@ -10,31 +10,33 @@
 		GameDetailsScreenshots.ImageHeight "108"
 		Tooltip.Anchor=Parent
 	}
+
 	styles {
 		infolabel {
-			textcolor=white
+			textcolor=red
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 		}
 
 		screenshotslabelmore {
 			textcolor="grey"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
-		    inset="-3 0 0 0"
-		    render_bg {}
+			inset="-3 0 0 0"
+			render_bg {}
 		}
 
-			screenshotslabelmore:hover {
-				textcolor="white"
-				font-size=15
-font-size=14 [$LINUX]
-				font-family=basefont
-			    inset="-3 0 0 0"
-			    render_bg {}
-			}
+		screenshotslabelmore:hover {
+			textcolor="red"
+			font-size=15
+			font-size=14 [$LINUX]
+			font-family=basefont
+			inset="-3 0 0 0"
+			render_bg {}
+		}
 	}
+
 	layout {
 		region {
 			name=body

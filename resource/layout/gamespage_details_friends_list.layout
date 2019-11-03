@@ -1,39 +1,41 @@
 "resource/layout/gamespage_details_friends_list.layout" {
 	colors {
 		// Note the margin/spacing/width values here must match what is used in placement below
-		// for the image region.  The margin value should be computed by adding the margin of all containing
-		// regions for the images.  All these values also must be positive integers.
+		// for the image region. The margin value should be computed by adding the margin of all containing
+		// regions for the images. All these values also must be positive integers.
 		GameDetailsFriends.ImageAreaMargin "14"
 		GameDetailsFriends.ImageAreaSpacing "4"
 		GameDetailsFriends.ImageWidth "42"
 
 		Tooltip.Anchor=Parent
 	}
+
 	styles {
 		friendlabelmore {
 			textcolor="greyhighlight"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
-		    inset="-3 0 0 0"
-		    render_bg {}
-    	}
+			inset="-3 0 0 0"
+			render_bg {}
+		}
 
-			friendlabelmore:hover {
-				textcolor="white"
-				font-size=15
-font-size=14 [$LINUX]
-				font-family=basefont
-			    inset="-3 0 0 0"
-			    render_bg {}
-	    	}
+		friendlabelmore:hover {
+			textcolor="White"
+			font-size=15
+			font-size=14 [$LINUX]
+			font-family=basefont
+			inset="-3 0 0 0"
+			render_bg {}
+		}
 
 		infolabel {
-			textcolor=white
+			textcolor=White
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 		}
 	}
+
 	layout {
 		region {
 			name=body
@@ -50,6 +52,7 @@ font-size=14 [$LINUX]
 			width=max
 			margin=2
 		}
+
 		place {
 			control=*friendimage,friendlabelmore
 			region=images
@@ -58,6 +61,7 @@ font-size=14 [$LINUX]
 			dir=right
 			spacing=4
 		}
+
 		// Only one of the next two will be visible at once
 		place {
 			control=infolabelplural

@@ -2,6 +2,7 @@
 	colors {
 		GameDetailsFriends.ExtraVerticalSpacing=95
 	}
+
 	styles {
 		// This overrides the default button.
 		button {
@@ -13,37 +14,39 @@
 			}
 		}
 
-			button:hover {
-				textcolor=lightestBlue
-			}
+		button:hover {
+			textcolor=lightestBlue
+		}
 
 		friendsdetails {
 			bgcolor=black65
 		}
+
 		infolabel {
-			textcolor=red
+			textcolor=White
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 		}
 
 		friendlabelmore {
 			textcolor="grey"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
-		    inset="-3 0 0 0"
-		    render_bg {}
+			inset="-3 0 0 0"
+			render_bg {}
 		}
 
 		friendlabelmore:hover {
-			textcolor="white"
+			textcolor="White"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
-		    inset="-3 0 0 0"
-		    render_bg {}
-    	}
+			inset="-3 0 0 0"
+			render_bg {}
+		}
 	}
+
 	layout {
 		region {
 			name=body

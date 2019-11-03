@@ -3,6 +3,7 @@
 		GameDetailsSubHeader.HorizontalSpacing=5
 		GameDetailsSubHeader.VerticalMargin=10
 	}
+
 	styles {
 		gameplayedheader {
 			textcolor=blue
@@ -23,13 +24,13 @@
 			render {}
 		}
 
-			ClientListButton:hover {
-				image="graphics/icon_down_hover"
-			}
+		ClientListButton:hover {
+			image="graphics/icon_down_hover"
+		}
 
 		DetailsButton {
 			//bgcolor=none
-			textcolor=white
+			textcolor=White
 			font-family=headerfont
 			font-size=30
 			font-style="outerglow"
@@ -45,7 +46,6 @@
 				-2="gradient(x1-1,y0+2,x1,y1-2,greyButtonGradientStart, greyButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,greyButtonGradientStart, greyButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,greyButtonGradientStart, greyButtonGradientEnd)"
-
 
 				1="fill(x0+2,y1-1,x1-2,y1, greyButtonGradientEnd)"
 
@@ -78,133 +78,132 @@
 				22="fill(x1-1,y1-3,x1,y1-2, greyButtonDarkenedCorners)"
 			}
 		}
-			DetailsButton:hover {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greyButtonHoverGradientStart, greyButtonHoverGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greyButtonHoverGradientStart, greyButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greyButtonHoverGradientStart, greyButtonHoverGradientEnd)"
 
+		DetailsButton:hover {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,greyButtonHoverGradientStart, greyButtonHoverGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,greyButtonHoverGradientStart, greyButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,greyButtonHoverGradientStart, greyButtonHoverGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, greyButtonHoverGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, greyButtonHoverGradientEnd)"
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greyButtonHoverAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greyButtonHoverAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greyButtonHoverDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greyButtonHoverDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greyButtonHoverAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greyButtonHoverAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greyButtonHoverAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greyButtonHoverAntiAliasedCorners)" // Bottom Right
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, greyButtonHoverAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, greyButtonHoverAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, greyButtonHoverDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, greyButtonHoverDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, greyButtonHoverAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, greyButtonHoverAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, greyButtonHoverAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, greyButtonHoverAntiAliasedCorners)" // Bottom Right
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greyButtonHoverHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, greyButtonHoverHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, greyButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greyButtonHoverDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greyButtonHoverDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greyButtonHoverDarkenedCorners)"
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, greyButtonHoverDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, greyButtonHoverDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, greyButtonHoverDarkenedCorners)"
 
-					20="fill(x1-3,y1-1,x1-2,y1, greyButtonHoverDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greyButtonHoverDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greyButtonHoverDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, greyButtonHoverDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, greyButtonHoverDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, greyButtonHoverDarkenedCorners)"
 			}
-			DetailsButton:Selected {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greyButtonActiveGradientStart, greyButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greyButtonActiveGradientStart, greyButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greyButtonActiveGradientStart, greyButtonActiveGradientEnd)"
+		}
 
+		DetailsButton:Selected {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,greyButtonActiveGradientStart, greyButtonActiveGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,greyButtonActiveGradientStart, greyButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,greyButtonActiveGradientStart, greyButtonActiveGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, greyButtonActiveGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, greyButtonActiveGradientEnd)"
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greyButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greyButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greyButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greyButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greyButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greyButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greyButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greyButtonActiveAntiAliasedCorners)" // Bottom Right
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, greyButtonActiveAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, greyButtonActiveAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, greyButtonActiveDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, greyButtonActiveDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, greyButtonActiveAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, greyButtonActiveAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, greyButtonActiveAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, greyButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greyButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, greyButtonActiveHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greyButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greyButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greyButtonActiveDarkenedCorners)"
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, greyButtonActiveDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, greyButtonActiveDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, greyButtonActiveDarkenedCorners)"
 
-					20="fill(x1-3,y1-1,x1-2,y1, greyButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greyButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greyButtonActiveDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, greyButtonActiveDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, greyButtonActiveDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, greyButtonActiveDarkenedCorners)"
 			}
-			DetailsButton:active {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greyButtonActiveGradientStart, greyButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greyButtonActiveGradientStart, greyButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greyButtonActiveGradientStart, greyButtonActiveGradientEnd)"
+		}
 
+		DetailsButton:active {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,greyButtonActiveGradientStart, greyButtonActiveGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,greyButtonActiveGradientStart, greyButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,greyButtonActiveGradientStart, greyButtonActiveGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, greyButtonActiveGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, greyButtonActiveGradientEnd)"
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greyButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greyButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greyButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greyButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greyButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greyButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greyButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greyButtonActiveAntiAliasedCorners)" // Bottom Right
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, greyButtonActiveAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, greyButtonActiveAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, greyButtonActiveDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, greyButtonActiveDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, greyButtonActiveAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, greyButtonActiveAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, greyButtonActiveAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, greyButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greyButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, greyButtonActiveHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, greyButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greyButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greyButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greyButtonActiveDarkenedCorners)"
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, greyButtonActiveDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, greyButtonActiveDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, greyButtonActiveDarkenedCorners)"
 
-					20="fill(x1-3,y1-1,x1-2,y1, greyButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greyButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greyButtonActiveDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, greyButtonActiveDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, greyButtonActiveDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, greyButtonActiveDarkenedCorners)"
 			}
+		}
 
 		DetailsLaunchButton [$OSX] {
-			textcolor=white
+			textcolor=White
 			font-family=headerfont
 			font-size=30
 			font-style="none"
 			padding-left=10
 			padding-right=10
 			inset="25 7 0 0"
-
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
 			}
@@ -213,7 +212,6 @@
 				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
-
 
 				1="fill(x0+2,y1-1,x1-2,y1, greenButtonGradientEnd)"
 
@@ -248,7 +246,7 @@
 		}
 
 		DetailsLaunchButton [!$OSX] {
-			textcolor=white
+			textcolor=White
 			font-family=headerfont
 			font-size=30
 			font-style="outerglow"
@@ -258,7 +256,6 @@
 			padding-left=10
 			padding-right=10
 			inset="25 1 0 0"
-
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/play/play_icon )"
 			}
@@ -267,7 +264,6 @@
 				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonGradientStart, greenButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonGradientStart, greenButtonGradientEnd)"
-
 
 				1="fill(x0+2,y1-1,x1-2,y1, greenButtonGradientEnd)"
 
@@ -301,136 +297,131 @@
 			}
 		}
 
-			DetailsLaunchButton:Hover {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonHoverGradientStart, greenButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
+		DetailsLaunchButton:Hover {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonHoverGradientStart, greenButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonHoverGradientStart, greenButtonHoverGradientEnd)"
 
+				1="fill(x0+2,y1-1,x1-2,y1, greenButtonHoverGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, greenButtonHoverGradientEnd)"
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, greenButtonHoverAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, greenButtonHoverAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, greenButtonHoverDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, greenButtonHoverDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greenButtonHoverAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greenButtonHoverAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greenButtonHoverDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greenButtonHoverDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greenButtonHoverAntiAliasedCorners)" // Bottom Right
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, greenButtonHoverHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greenButtonHoverHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greenButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, greenButtonHoverDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonHoverDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, greenButtonHoverDarkenedCorners)"
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greenButtonHoverDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonHoverDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greenButtonHoverDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, greenButtonHoverDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonHoverDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greenButtonHoverDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, greenButtonHoverDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonHoverDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, greenButtonHoverDarkenedCorners)"
 			}
+		}
 
-			DetailsLaunchButton:Selected {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
+		DetailsLaunchButton:Selected {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
 
+				1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, greenButtonActiveDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, greenButtonActiveDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greenButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greenButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
 			}
+		}
 
+		DetailsLaunchButton:Active {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
 
-			DetailsLaunchButton:Active {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,greenButtonActiveGradientStart, greenButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,greenButtonActiveGradientStart, greenButtonActiveGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
 
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, greenButtonActiveDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, greenButtonActiveDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					1="fill(x0+2,y1-1,x1-2,y1, greenButtonActiveGradientEnd)"
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, greenButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, greenButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, greenButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, greenButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, greenButtonActiveAntiAliasedCorners)" // Bottom Right
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, greenButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, greenButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, greenButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, greenButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, greenButtonActiveDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, greenButtonActiveDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, greenButtonActiveDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, greenButtonActiveDarkenedCorners)"
 			}
+		}
 
 		DetailsInstallButton [$OSX] {
-			textcolor=white
+			textcolor=White
 			font-family=headerfont
 			font-size=30
 			font-style="none"
 			padding-left=10
 			padding-right=10
 			inset="25 7 0 0"
-
 			render {
 				1="image( x0 + 14, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
 			}
@@ -439,7 +430,6 @@
 				-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonGradientStart, blueButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonGradientStart, blueButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonGradientStart, blueButtonGradientEnd)"
-
 
 				1="fill(x0+2,y1-1,x1-2,y1, blueButtonGradientEnd)"
 
@@ -474,7 +464,7 @@
 		}
 
 		DetailsInstallButton [!$OSX] {
-			textcolor=white
+			textcolor=White
 			font-family=headerfont
 			font-size=30
 			font-style="outerglow"
@@ -484,7 +474,6 @@
 			padding-left=10
 			padding-right=10
 			inset="25 3 0 0"
-
 			render {
 				1="image( x0 + 14, y0 + 14, x1, y1, graphics/gamedetails/install/install_icon )"
 			}
@@ -493,7 +482,6 @@
 				-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonGradientStart, blueButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonGradientStart, blueButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonGradientStart, blueButtonGradientEnd)"
-
 
 				1="fill(x0+2,y1-1,x1-2,y1, blueButtonGradientEnd)"
 
@@ -527,130 +515,125 @@
 			}
 		}
 
-			DetailsInstallButton:Hover {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonHoverGradientStart, blueButtonHoverGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonHoverGradientStart, blueButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonHoverGradientStart, blueButtonHoverGradientEnd)"
+		DetailsInstallButton:Hover {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonHoverGradientStart, blueButtonHoverGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonHoverGradientStart, blueButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonHoverGradientStart, blueButtonHoverGradientEnd)"
 
+				1="fill(x0+2,y1-1,x1-2,y1, blueButtonHoverGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, blueButtonHoverGradientEnd)"
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, blueButtonHoverAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, blueButtonHoverAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, blueButtonHoverDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, blueButtonHoverDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, blueButtonHoverAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, blueButtonHoverAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, blueButtonHoverAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, blueButtonHoverAntiAliasedCorners)" // Bottom Right
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, blueButtonHoverAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, blueButtonHoverAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, blueButtonHoverDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, blueButtonHoverDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, blueButtonHoverAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, blueButtonHoverAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, blueButtonHoverAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, blueButtonHoverAntiAliasedCorners)" // Bottom Right
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, blueButtonHoverHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, blueButtonHoverHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, blueButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, blueButtonHoverDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonHoverDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, blueButtonHoverDarkenedCorners)"
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, blueButtonHoverDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonHoverDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, blueButtonHoverDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, blueButtonHoverDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonHoverDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, blueButtonHoverDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, blueButtonHoverDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonHoverDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, blueButtonHoverDarkenedCorners)"
 			}
+		}
 
-			DetailsInstallButton:Selected {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonActiveGradientStart, blueButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
+		DetailsInstallButton:Selected {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonActiveGradientStart, blueButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
 
+				1="fill(x0+2,y1-1,x1-2,y1, blueButtonActiveGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, blueButtonActiveGradientEnd)"
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, blueButtonActiveAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, blueButtonActiveAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, blueButtonActiveDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, blueButtonActiveDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, blueButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, blueButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, blueButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, blueButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, blueButtonActiveHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, blueButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, blueButtonActiveDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonActiveDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, blueButtonActiveDarkenedCorners)"
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, blueButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, blueButtonActiveDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, blueButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, blueButtonActiveDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, blueButtonActiveDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonActiveDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, blueButtonActiveDarkenedCorners)"
 			}
+		}
 
+		DetailsInstallButton:Active {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonActiveGradientStart, blueButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
 
-			DetailsInstallButton:Active {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,blueButtonActiveGradientStart, blueButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,blueButtonActiveGradientStart, blueButtonActiveGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, blueButtonActiveGradientEnd)"
 
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, blueButtonActiveAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, blueButtonActiveAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, blueButtonActiveDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, blueButtonActiveDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					1="fill(x0+2,y1-1,x1-2,y1, blueButtonActiveGradientEnd)"
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, blueButtonActiveHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, blueButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, blueButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, blueButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, blueButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, blueButtonActiveAntiAliasedCorners)" // Bottom Right
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, blueButtonActiveDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonActiveDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, blueButtonActiveDarkenedCorners)"
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, blueButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, blueButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, blueButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, blueButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, blueButtonActiveDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, blueButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, blueButtonActiveDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, blueButtonActiveDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, blueButtonActiveDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, blueButtonActiveDarkenedCorners)"
 			}
-
+		}
 
 		DetailsBuyButton [$OSX] {
-			textcolor=white
+			textcolor=White
 			font-family=headerfont
 			font-size=30
 			font-style="none"
@@ -665,7 +648,6 @@
 				-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonGradientStart, yellowButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonGradientStart, yellowButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonGradientStart, yellowButtonGradientEnd)"
-
 
 				1="fill(x0+2,y1-1,x1-2,y1, yellowButtonGradientEnd)"
 
@@ -700,7 +682,7 @@
 		}
 
 		DetailsBuyButton [!$OSX] {
-			textcolor=white
+			textcolor=White
 			font-family=headerfont
 			font-size=30
 			font-style="outerglow"
@@ -710,7 +692,6 @@
 			padding-left=10
 			padding-right=10
 			inset="25 3 0 0"
-
 			render {
 				1="image( x0 + 16, y0 + 10, x1, y1, graphics/gamedetails/buy/buy_icon )"
 			}
@@ -719,7 +700,6 @@
 				-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonGradientStart, yellowButtonGradientEnd)"
 				-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonGradientStart, yellowButtonGradientEnd)"
 				0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonGradientStart, yellowButtonGradientEnd)"
-
 
 				1="fill(x0+2,y1-1,x1-2,y1, yellowButtonGradientEnd)"
 
@@ -753,127 +733,124 @@
 			}
 		}
 
-			DetailsBuyButton:hover {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonHoverGradientStart, yellowButtonHoverGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonHoverGradientStart, yellowButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonHoverGradientStart, yellowButtonHoverGradientEnd)"
+		DetailsBuyButton:hover {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonHoverGradientStart, yellowButtonHoverGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonHoverGradientStart, yellowButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonHoverGradientStart, yellowButtonHoverGradientEnd)"
 
+				1="fill(x0+2,y1-1,x1-2,y1, yellowButtonHoverGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, yellowButtonHoverGradientEnd)"
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, yellowButtonHoverAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, yellowButtonHoverAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, yellowButtonHoverDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, yellowButtonHoverDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, yellowButtonHoverAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, yellowButtonHoverAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, yellowButtonHoverAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, yellowButtonHoverAntiAliasedCorners)" // Bottom Right
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, yellowButtonHoverAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, yellowButtonHoverAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, yellowButtonHoverDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, yellowButtonHoverDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, yellowButtonHoverAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, yellowButtonHoverAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, yellowButtonHoverAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, yellowButtonHoverAntiAliasedCorners)" // Bottom Right
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, yellowButtonHoverHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, yellowButtonHoverHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, yellowButtonHoverHighlightAntiAliasing)" // Anti-Aliasing
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, yellowButtonHoverDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonHoverDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, yellowButtonHoverDarkenedCorners)"
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, yellowButtonHoverDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonHoverDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, yellowButtonHoverDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, yellowButtonHoverDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonHoverDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, yellowButtonHoverDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, yellowButtonHoverDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonHoverDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, yellowButtonHoverDarkenedCorners)"
 			}
+		}
 
-			DetailsBuyButton:active {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonActiveGradientStart, yellowButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
+		DetailsBuyButton:active {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonActiveGradientStart, yellowButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
 
+				1="fill(x0+2,y1-1,x1-2,y1, yellowButtonActiveGradientEnd)"
 
-					1="fill(x0+2,y1-1,x1-2,y1, yellowButtonActiveGradientEnd)"
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, yellowButtonActiveAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, yellowButtonActiveAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, yellowButtonActiveDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, yellowButtonActiveDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, yellowButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, yellowButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, yellowButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, yellowButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, yellowButtonActiveHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, yellowButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, yellowButtonActiveDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonActiveDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, yellowButtonActiveDarkenedCorners)"
 
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, yellowButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, yellowButtonActiveDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, yellowButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, yellowButtonActiveDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, yellowButtonActiveDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonActiveDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, yellowButtonActiveDarkenedCorners)"
 			}
+		}
 
+		DetailsBuyButton:Selected {
+			render_bg {
+				// Background
+				-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
+				-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonActiveGradientStart, yellowButtonGradientEnd)"
+				0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
 
-			DetailsBuyButton:Selected {
-				render_bg {
-					// Background
-					-2="gradient(x1-1,y0+2,x1,y1-2,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
-					-1="gradient(x0,y0+2,x0+1,y1-2,yellowButtonActiveGradientStart, yellowButtonGradientEnd)"
-					0="gradient(x0+1,y0+1,x1-1,y1-1,yellowButtonActiveGradientStart, yellowButtonActiveGradientEnd)"
+				1="fill(x0+2,y1-1,x1-2,y1, yellowButtonActiveGradientEnd)"
 
+				//Anti-Alias
+				2="fill(x0+1,y0,x0+2,y0+1, yellowButtonActiveAntiAliasedCorners)" // Top Left
+				3="fill(x0,y0+1,x0+1,y0+2, yellowButtonActiveAntiAliasedCorners)" // Top Left
+				4="fill(x1-2, y0, x1-1, y0+1, yellowButtonActiveDarkenedCorners)" // Top Right
+				5="fill(x1-1,y0+1,x1,y0+2, yellowButtonActiveDarkenedCorners)" // Top Right
+				6="fill(x0, y1-2, x0+1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
+				7="fill(x0+1, y1-1, x0+2, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
+				8="fill(x1-2, y1-1, x1-1, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
+				9="fill(x1-1, y1-2, x1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
 
-					1="fill(x0+2,y1-1,x1-2,y1, yellowButtonActiveGradientEnd)"
+				// 1px Solid Line Top
+				10="fill(x0+3, y0, x1-3, y0+1, yellowButtonActiveHighlight)" // Main Line
+				11="fill(x0+2, y0, x0+3, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				12="fill(x0+1, y0+1, x0+2, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				13="fill(x0, y0+2, x0+1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				14="fill(x1-3, y0, x1-2, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
+				16="fill(x1-1, y0+2, x1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
 
-					//Anti-Alias
-					2="fill(x0+1,y0,x0+2,y0+1, yellowButtonActiveAntiAliasedCorners)" // Top Left
-					3="fill(x0,y0+1,x0+1,y0+2, yellowButtonActiveAntiAliasedCorners)" // Top Left
-					4="fill(x1-2, y0, x1-1, y0+1, yellowButtonActiveDarkenedCorners)" // Top Right
-					5="fill(x1-1,y0+1,x1,y0+2, yellowButtonActiveDarkenedCorners)" // Top Right
-					6="fill(x0, y1-2, x0+1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
-					7="fill(x0+1, y1-1, x0+2, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Left
-					8="fill(x1-2, y1-1, x1-1, y1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
-					9="fill(x1-1, y1-2, x1, y1-1, yellowButtonActiveAntiAliasedCorners)" // Bottom Right
+				// Bottom Corner Rounding
+				17="fill(x0,y1-3,x0+1,y1-2, yellowButtonActiveDarkenedCorners)"
+				18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonActiveDarkenedCorners)"
+				19="fill(x0+2,y1-1,x0+3,y1, yellowButtonActiveDarkenedCorners)"
 
-					// 1px Solid Line Top
-					10="fill(x0+3, y0, x1-3, y0+1, yellowButtonActiveHighlight)" // Main Line
-					11="fill(x0+2, y0, x0+3, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					12="fill(x0+1, y0+1, x0+2, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					13="fill(x0, y0+2, x0+1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					14="fill(x1-3, y0, x1-2, y0+1, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					15="fill(x1-2, y0+1, x1-1, y0+2, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-					16="fill(x1-1, y0+2, x1, y0+3, yellowButtonActiveHighlightAntiAliasing)" // Anti-Aliasing
-
-					// Bottom Corner Rounding
-					17="fill(x0,y1-3,x0+1,y1-2, yellowButtonActiveDarkenedCorners)"
-					18="fill(x0+1,y1-2,x0+2,y1-1, yellowButtonActiveDarkenedCorners)"
-					19="fill(x0+2,y1-1,x0+3,y1, yellowButtonActiveDarkenedCorners)"
-
-					20="fill(x1-3,y1-1,x1-2,y1, yellowButtonActiveDarkenedCorners)"
-					21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonActiveDarkenedCorners)"
-					22="fill(x1-1,y1-3,x1,y1-2, yellowButtonActiveDarkenedCorners)"
-				}
+				20="fill(x1-3,y1-1,x1-2,y1, yellowButtonActiveDarkenedCorners)"
+				21="fill(x1-2,y1-2,x1-1,y1-1, yellowButtonActiveDarkenedCorners)"
+				22="fill(x1-1,y1-3,x1,y1-2, yellowButtonActiveDarkenedCorners)"
 			}
+		}
 	}
+
 	layout {
 		// Y offset here should match the vertical padding value above in the colors section
 		region {
@@ -883,6 +860,7 @@
 			width=max
 			height=max
 		}
+
 		place {
 			control=subheaderlabels
 			region=header
@@ -891,6 +869,7 @@
 			dir=left
 			end-right=launchbutton
 		}
+
 		place {
 			control=launchbutton,clientlist
 			region=header
@@ -903,6 +882,7 @@
 			spacing=0
 			dir=right
 		}
+
 		place {
 			control=clientlist
 			start=launchbutton

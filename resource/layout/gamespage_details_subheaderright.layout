@@ -6,25 +6,27 @@
 		gamehubbgbottom="54 74 99 255"
 		gamehubborder="74 100 133 255"
 	}
+
 	styles {
 		CDetailsGameSubHeaderRightPanel {
 			bgcolor=red
 		}
+
 		DetailsButton {
 			bgcolor=none
 			textcolor="Text"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			inset="-3 0 0 0"
 			render_bg {
 				// background fill
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, gamehubbgtop, gamehubbgbottom )"
-				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, gamehubborder )"  // top
-				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, gamehubborder )"  // bottom
-				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, gamehubborder )"  // left
-				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, gamehubborder )"  // right
+				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, gamehubborder )" // top
+				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, gamehubborder )" // bottom
+				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, gamehubborder )" // left
+				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, gamehubborder )" // right
 
 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, gamehubborder )"
 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, gamehubborder )"
@@ -41,15 +43,16 @@ font-size=14 [$LINUX]
 			}
 		}
 
-			DetailsButton:hover {
-				textcolor="white"
-			}
+		DetailsButton:hover {
+			textcolor="red"
+		}
 
-			DetailsButton:active {
-				textcolor="white"
-				inset="-2 1 0 0"
-			}
+		DetailsButton:active {
+			textcolor="red"
+			inset="-2 1 0 0"
+		}
 	}
+
 	layout {
 		// Y offset here should match the vertical padding value above in the colors section
 		region {
@@ -59,6 +62,7 @@ font-size=14 [$LINUX]
 			width=max
 			height=max
 		}
+
 		place {
 			control=subheaderlabels,gamehubbutton
 			region=header

@@ -1,27 +1,30 @@
 "resource/layout/gamespage_grid_loadfailed.layout" {
 	styles {
 		GamesGridPlaceholder {
-			textcolor=white
+			textcolor=White
 			font-size=28
 			font-family=headerfont
 		}
+
 		GamesGridIconBorder {
 			bgcolor="none"
 			inset="0 0 0 0"
-
-		    render {}
+			render {}
 		}
 
 		GGPlaceholderBG {
 			bgcolor=none
 		}
+
 		"GameItem_Uninstalled GamesGridPlaceholder" {
-			textcolor=white20
+			textcolor=red20
 		}
+
 		"GameItem_installed GamesGridPlaceholder" {
-			textcolor="white"
+			textcolor="White"
 		}
 	}
+
 	layout {
 		region {
 			name=icon_region

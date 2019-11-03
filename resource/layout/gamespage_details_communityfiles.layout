@@ -5,20 +5,20 @@
 		RichText.InsetX "0"
 		RichText.InsetY "3"
 	}
+
 	styles {
 		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0
-
 			render_bg {
 				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
 			}
 		}
 
-			button:hover {
-				textcolor=lightestBlue
-			}
+		button:hover {
+			textcolor=lightestBlue
+		}
 
 		communityfilesdetails {
 			bgcolor=black65
@@ -26,10 +26,11 @@
 
 		infolabel {
 			font-size=15
-font-size=14 [$LINUX]
-			textcolor=white
+			font-size=14 [$LINUX]
+			textcolor=White
 		}
 	}
+
 	layout {
 		region {
 			name=body
@@ -37,6 +38,7 @@ font-size=14 [$LINUX]
 			height=max
 			margin=20
 		}
+
 		place {
 			region=body
 			control=workshopdetails

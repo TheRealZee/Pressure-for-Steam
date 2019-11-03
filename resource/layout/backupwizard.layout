@@ -1,6 +1,8 @@
 "resource/layout/backupwizard.layout" {
 	controls {}
+
 	styles {}
+
 	layout {
 		place {
 			control="Label1,AppChecklist,Label2"
@@ -9,6 +11,7 @@
 			dir=down
 			spacing=8
 		}
+
 		//Footer
 		region {
 			name=bottom

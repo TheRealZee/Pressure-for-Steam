@@ -8,38 +8,42 @@
 		GameDetailsAchievements.LockedImageBorder "3"
 		Tooltip.Anchor=Parent
 	}
+
 	styles {
 		lockedarea {
 			minimum-height="76"
 		}
+
 		infolabel {
 			font-size=1
 			textcolor=none
 		}
+
 		achievementlabelmore {
 			textcolor="greyhighlight"
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-family=basefont
-		    inset="-3 0 0 0"
-		    render_bg {}
-    	}
+			inset="-3 0 0 0"
+			render_bg {}
+		}
 
-			achievementlabelmore:hover {
-				textcolor="white"
-				font-size=15
-font-size=14 [$LINUX]
-				font-family=basefont
-			    inset="-3 0 0 0"
-			    render_bg {}
-	    	}
+		achievementlabelmore:hover {
+			textcolor="White"
+			font-size=15
+			font-size=14 [$LINUX]
+			font-family=basefont
+			inset="-3 0 0 0"
+			render_bg {}
+		}
 
 		achievementimagebg {
 			bgcolor=none
 			inset="1 0 0 0"
-      		image="graphics/achievementbg"
+			image="graphics/achievementbg"
 		}
 	}
+
 	layout {
 		region {
 			name=body
@@ -57,6 +61,7 @@ font-size=14 [$LINUX]
 			height=48
 			margin=2
 		}
+
 		place {
 			region=body
 			control=imageexplanation

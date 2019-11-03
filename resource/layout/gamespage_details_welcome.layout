@@ -12,8 +12,8 @@
 		}
 
 		bodycontent {
-			textcolor="white"
-			selectedtextcolor="white"	
+			textcolor="red"
+			selectedtextcolor="red"	
 			font-size=15
 			render_bg {}
 		}

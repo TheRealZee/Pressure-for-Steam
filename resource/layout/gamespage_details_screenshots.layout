@@ -5,24 +5,26 @@
 		RichText.InsetX "0"
 		RichText.InsetY "3"
 	}
+
 	styles {
 		// This overrides the default button.
 		button {
 			textcolor=blue
 			padding=0
-
 			render_bg {
 				0="image(x1-5, y1-14, x1, y1-10, graphics/details_button)"
 			}
 		}
 
-			button:hover {
-				textcolor=lightestBlue
-			}
+		button:hover {
+			textcolor=lightestBlue
+		}
+
 		screenshotsdetails {
 			bgcolor=black65
 		}
 	}
+
 	layout {
 		region {
 			name=body
@@ -30,6 +32,7 @@
 			height=max
 			margin=20
 		}
+
 		place {
 			control=headerlabel
 			region=body
@@ -43,6 +46,7 @@
 			width=max
 			dir=down
 		}
+
 		place {
 			control=viewall
 			region=body

@@ -1,5 +1,6 @@
 "resource/layout/dialogsettings_managesecuritywizard.layout" {
 	controls {}
+
  	layout {
 		region {
 			name=bottom
